@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Monster : MonoBehaviour
+public class Monster
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string Name { get; set; }
+    public int Staerke { get; set; }
+    public int Wiederstandskraft { get; set; }
 
-    // Update is called once per frame
-    void Update()
+    public Monster(string name, int staerke, int wiederstandskraft)
     {
-        
+        Name = name;
+        Staerke = staerke;
+        Wiederstandskraft = wiederstandskraft;
+
     }
 }
