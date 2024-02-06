@@ -1,0 +1,51 @@
+{
+    "roomID": "start",
+    "roomName": "Start",
+    "description": "Das ist der Start des Abenteuers",
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "",
+            "Staerke": 0,
+            "Wiederstandskraft": 0
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Abzweigung i",
+            "targetID": "r2",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Abzweigung ii",
+            "targetID": "r3",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Abzweigung iiii",
+            "targetID": "r4",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Abzweigung iv",
+            "targetID": "r5",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+    ]
+}

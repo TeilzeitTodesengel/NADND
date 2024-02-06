@@ -1,0 +1,8 @@
+{
+    "roomID": "ende",
+    "roomName": "Ende",
+    "description": "Du glaubst du seist der mächtigste",
+    "isFight": false,
+    "fight": null,
+    "abzweigungen": null
+}

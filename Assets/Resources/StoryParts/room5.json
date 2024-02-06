@@ -1,0 +1,51 @@
+{
+    "roomID": "r5",
+    "roomName": "Raum 5",
+    "description": "Das ist der erste Kamp des Abenteuers",
+    "isFight": true,
+    "fight": {
+        "Monster": {
+            "Name": "Imp",
+            "Staerke": 1,
+            "Wiederstandskraft": 1
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Abzweigung i",
+            "targetID": "ende",
+            "loot": {
+                "Name": "Feuerschwert des Verderbens",
+                "Description": "Das Feuerschwert eines Imps",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Abzweigung ii",
+            "targetID": "ende",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Abzweigung iiii",
+            "targetID": "ende",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Abzweigung iv",
+            "targetID": "ende",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+    ]
+}

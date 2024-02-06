@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System;
 
-public class StoryPart : MonoBehaviour
+[Serializable]
+public class StoryPart
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public String roomID;
+    public String roomName;
+    public String description;
+    public bool isFight;
+    public Fight fight;
+    public Abzweigung[] abzweigungen;
 
-    // Update is called once per frame
-    void Update()
+    public StoryPart(string roomID, string roomName, string description, bool isFight, Fight fight, Abzweigung[] abzweigungen)
     {
-        
+        this.roomID = roomID;
+        this.roomName = roomName;
+        this.description = description;
+        this.isFight = isFight;
+        this.fight = fight;
+        this.abzweigungen = abzweigungen;
     }
 }
