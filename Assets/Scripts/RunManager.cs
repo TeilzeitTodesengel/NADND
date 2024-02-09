@@ -22,7 +22,13 @@ public class RunManager : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             optionButtons[i] = GameObject.Find("Option" + (i + 1));
+            optionButtons[i].GetComponent<Button>().onClick.AddListener(LoadFirstPart);
         }
         
+    }   
+
+    public void LoadFirstPart()
+    {
+        currentPart = GetComponent<StoryManager>().StoryParts[currentPart.abzweigungen[0].targetID];
     }
 }

@@ -26,7 +26,8 @@ public class StartGameScript : MonoBehaviour
         GetComponent<RunManager>().currentPart = GetComponent<StoryManager>().StoryParts["start"];
         GameObject displayText = GameObject.Find("Placeholder");
         GetComponent<StageManager>().mainText = displayText.GetComponent<TextMeshProUGUI>();
-        GetComponent<StageManager>().UpdateText(GetComponent<RunManager>().currentPart);
         GetComponent<RunManager>().getOptionButtons();
+        GetComponent<StageManager>().UpdateText(GetComponent<RunManager>().currentPart);
+        
     }
 }

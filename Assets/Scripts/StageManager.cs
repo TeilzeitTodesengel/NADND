@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StageManager : MonoBehaviour
 {
@@ -21,43 +22,43 @@ public class StageManager : MonoBehaviour
     
     public void UpdateText(StoryPart newContent)
     { 
-        GameObject[] abzweigungen = GetComponent<RunManager>().optionButtons;
+        GameObject[] optionButtons = GetComponent<RunManager>().optionButtons;
         mainText.SetText(newContent.description);
-        abzweigungen[0].SetActive(true);
-        abzweigungen[1].SetActive(true);
-        abzweigungen[2].SetActive(true);
-        abzweigungen[3].SetActive(true);
+        optionButtons[0].SetActive(true);
+        optionButtons[1].SetActive(true);
+        optionButtons[2].SetActive(true);
+        optionButtons[3].SetActive(true);
         switch (newContent.abzweigungen.Length)
         {
-            case 0:
-                abzweigungen[0].SetActive(false);
-                abzweigungen[1].SetActive(false);
-                abzweigungen[2].SetActive(false);
-                abzweigungen[3].SetActive(false);
-                break;
             case 1:
-                abzweigungen[0].SetActive(false);
-                abzweigungen[0].SetActive(false);
-                abzweigungen[0].SetActive(false);
-                abzweigungen[0].SetActive(false);
+                optionButtons[0].GetComponentInChildren<TextMeshProUGUI>().text = newContent.abzweigungen[0].description;
+                optionButtons[0].SetActive(false);
+                optionButtons[0].SetActive(false);
+                optionButtons[0].SetActive(false);
                 break;
             case 2:
-                abzweigungen[0].SetActive(false);
-                abzweigungen[0].SetActive(false);
-                abzweigungen[0].SetActive(false);
-                abzweigungen[0].SetActive(false);
+                optionButtons[0].GetComponentInChildren<TextMeshProUGUI>().text = newContent.abzweigungen[0].description;
+                optionButtons[1].GetComponentInChildren<TextMeshProUGUI>().text = newContent.abzweigungen[1].description;
+                optionButtons[2].SetActive(false);
+                optionButtons[3].SetActive(false);
                 break;
             case 3:
-                abzweigungen[0].SetActive(false);
-                abzweigungen[0].SetActive(false);
-                abzweigungen[0].SetActive(false);
-                abzweigungen[0].SetActive(false);
+                optionButtons[0].GetComponentInChildren<TextMeshProUGUI>().text = newContent.abzweigungen[0].description;
+                optionButtons[1].GetComponentInChildren<TextMeshProUGUI>().text = newContent.abzweigungen[1].description;
+                optionButtons[2].GetComponentInChildren<TextMeshProUGUI>().text = newContent.abzweigungen[2].description;
+                optionButtons[3].SetActive(false);
                 break;
             case 4:
-                abzweigungen[0].SetActive(false);
-                abzweigungen[0].SetActive(false);
-                abzweigungen[0].SetActive(false);
-                abzweigungen[0].SetActive(false);
+                optionButtons[0].GetComponentInChildren<TextMeshProUGUI>().text = newContent.abzweigungen[0].description;
+                optionButtons[1].GetComponentInChildren<TextMeshProUGUI>().text = newContent.abzweigungen[1].description;
+                optionButtons[2].GetComponentInChildren<TextMeshProUGUI>().text = newContent.abzweigungen[2].description;
+                optionButtons[3].GetComponentInChildren<TextMeshProUGUI>().text = newContent.abzweigungen[3].description;
+                break;
+            default:
+                optionButtons[0].SetActive(false);
+                optionButtons[1].SetActive(false);
+                optionButtons[2].SetActive(false);
+                optionButtons[3].SetActive(false);
                 break;
         }
     }

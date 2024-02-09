@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 458702580}
   - component: {fileID: 458702579}
   m_Layer: 5
-  m_Name: Option2
+  m_Name: Option3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -375,7 +375,7 @@ RectTransform:
   m_Children:
   - {fileID: 1908374202}
   m_Father: {fileID: 822043309}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -425,7 +425,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 458702580}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4018495824501837164, guid: c2c6650abbdb9a64c8b03e77ecbf2581, type: 3}
+        m_TargetAssemblyTypeName: RunManager, Assembly-CSharp
+        m_MethodName: LoadNewPart
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &458702580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -547,7 +559,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 752018981}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4018495824501837164, guid: c2c6650abbdb9a64c8b03e77ecbf2581, type: 3}
+        m_TargetAssemblyTypeName: RunManager, Assembly-CSharp
+        m_MethodName: LoadNewPart
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &752018981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,9 +841,9 @@ RectTransform:
   - {fileID: 1717731556}
   - {fileID: 767772121}
   - {fileID: 752018979}
+  - {fileID: 1434968232}
   - {fileID: 458702578}
   - {fileID: 1629919371}
-  - {fileID: 1434968232}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -841,7 +865,7 @@ GameObject:
   - component: {fileID: 1434968234}
   - component: {fileID: 1434968233}
   m_Layer: 5
-  m_Name: Option4
+  m_Name: Option2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -861,7 +885,7 @@ RectTransform:
   m_Children:
   - {fileID: 53639009}
   m_Father: {fileID: 822043309}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -911,7 +935,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1434968234}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4018495824501837164, guid: c2c6650abbdb9a64c8b03e77ecbf2581, type: 3}
+        m_TargetAssemblyTypeName: RunManager, Assembly-CSharp
+        m_MethodName: LoadNewPart
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1434968234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -963,7 +999,7 @@ GameObject:
   - component: {fileID: 1629919373}
   - component: {fileID: 1629919372}
   m_Layer: 5
-  m_Name: Option3
+  m_Name: Option4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -983,7 +1019,7 @@ RectTransform:
   m_Children:
   - {fileID: 2044950138}
   m_Father: {fileID: 822043309}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1033,7 +1069,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1629919373}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4018495824501837164, guid: c2c6650abbdb9a64c8b03e77ecbf2581, type: 3}
+        m_TargetAssemblyTypeName: RunManager, Assembly-CSharp
+        m_MethodName: LoadNewPart
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1629919373
 MonoBehaviour:
   m_ObjectHideFlags: 0
