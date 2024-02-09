@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class RunManager : MonoBehaviour
 {
@@ -11,9 +12,17 @@ public class RunManager : MonoBehaviour
     public List<Item> items = new List<Item>();
     public GameObject mainObject;
 
-    
+    public GameObject[] optionButtons = new GameObject[4] ;
     void Start()
     {
     }
-    
+
+    public void getOptionButtons()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            optionButtons[i] = GameObject.Find("Option" + (i + 1));
+        }
+        
+    }
 }
