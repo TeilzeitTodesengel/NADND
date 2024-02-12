@@ -33,8 +33,29 @@ public class RunManager : MonoBehaviour
     {
         for (int i = 0; i < 4; i++)
         {
-            optionButtons[i] = GameObject.Find("Option" + (i + 1)); 
+            optionButtons[i] = GameObject.Find("Option" + (i + 1));
         }
+        
+        optionButtons[0].GetComponent<Button>().onClick.AddListener(
+            delegate
+            {
+                GetComponent<StoryManager>().LoadSelectedPath(0);
+            });
+        optionButtons[1].GetComponent<Button>().onClick.AddListener(
+            delegate
+            {
+                GetComponent<StoryManager>().LoadSelectedPath(1);
+            });
+        optionButtons[2].GetComponent<Button>().onClick.AddListener(
+            delegate
+            {
+                GetComponent<StoryManager>().LoadSelectedPath(2);
+            });
+        optionButtons[3].GetComponent<Button>().onClick.AddListener(
+            delegate
+            {
+                GetComponent<StoryManager>().LoadSelectedPath(3);
+            });
         
     }   
 

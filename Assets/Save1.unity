@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.57710356, g: 0.95874816, b: 1.0771437, a: 1}
+  m_IndirectSpecularColor: {r: 0.5184462, g: 0.8630669, b: 0.9706982, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -482,19 +482,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 458702580}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3620929922316067421, guid: c2c6650abbdb9a64c8b03e77ecbf2581, type: 3}
-        m_TargetAssemblyTypeName: StoryManager, Assembly-CSharp
-        m_MethodName: LoadPart
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: r2
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &458702580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -616,19 +604,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 752018981}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3620929922316067421, guid: c2c6650abbdb9a64c8b03e77ecbf2581, type: 3}
-        m_TargetAssemblyTypeName: StoryManager, Assembly-CSharp
-        m_MethodName: LoadPart
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: r2
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &752018981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,19 +968,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1434968234}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3620929922316067421, guid: c2c6650abbdb9a64c8b03e77ecbf2581, type: 3}
-        m_TargetAssemblyTypeName: StoryManager, Assembly-CSharp
-        m_MethodName: LoadPart
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: r2
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1434968234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1126,19 +1090,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1629919373}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3620929922316067421, guid: c2c6650abbdb9a64c8b03e77ecbf2581, type: 3}
-        m_TargetAssemblyTypeName: StoryManager, Assembly-CSharp
-        m_MethodName: LoadPart
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: r2
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1629919373
 MonoBehaviour:
   m_ObjectHideFlags: 0
