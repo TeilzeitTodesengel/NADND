@@ -2,27 +2,43 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using Unity.VisualScripting;
 using UnityEngine;
+
 
 public class StoryManager : MonoBehaviour
 {
-    public Dictionary<String, StoryPart> StoryParts = new Dictionary<String, StoryPart>();
-
+    
+    private Dictionary<String, StoryPart> StoryParts = new Dictionary<String, StoryPart>();
     public GameObject mainObject;
-    // Start is called before the first frame update
-    void Start()
+    
+    private void Awake()
     {
+        DontDestroyOnLoad(GetComponent<StoryManager>());
+        StoryParts.Clear();
         var start = Resources.LoadAll<TextAsset>("StoryParts");
         foreach (TextAsset asset in start)
         {
             StoryPart part = JsonUtility.FromJson<StoryPart>(asset.text);
             StoryParts.Add(part.roomID, part);
         }
+        Debug.Log("Story Part Key Check: " + StoryParts.ContainsKey("r2"));
+        Debug.Log("Story Manager Init finished");
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void Update()
     {
-        
+        Debug.Log(StoryParts.ContainsKey("r2"));
+    }
+
+    public void LoadPart(string partToLoadID)
+    {
+        /*
+        StoryPart partToLoad = StoryParts[partToLoadID];
+        GetComponent<RunManager>().currentPart = partToLoad;
+        GetComponent<StageManager>().UpdateText(partToLoad);
+        */
+        Debug.Log(StoryParts.ContainsKey(partToLoadID));
     }
 }

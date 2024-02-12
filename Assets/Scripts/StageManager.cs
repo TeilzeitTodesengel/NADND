@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -7,19 +8,17 @@ using UnityEngine.UI;
 public class StageManager : MonoBehaviour
 {
     public GameObject mainObject;
+
+    
     public TextMeshProUGUI mainText;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        DontDestroyOnLoad(GetComponent<StageManager>());
+        mainText = GameObject.Find("Placeholder").GetComponent<TextMeshProUGUI>();
+        Debug.Log("Stage Manager Init finished");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
     public void UpdateText(StoryPart newContent)
     { 
         GameObject[] optionButtons = GetComponent<RunManager>().optionButtons;
