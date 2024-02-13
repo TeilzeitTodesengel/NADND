@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -15,10 +16,11 @@ public class StoryManager : MonoBehaviour
     {
         DontDestroyOnLoad(GetComponent<StoryManager>());
         StoryParts.Clear();
-        var start = Resources.LoadAll<TextAsset>("StoryParts");
-        foreach (TextAsset asset in start)
+        string streamingAssetPath = Application.streamingAssetsPath;
+        foreach (string filePath in  Directory.GetFiles(streamingAssetPath + "/StoryParts").Where(filename => filename.EndsWith(".json")))
         {
-            StoryPart part = JsonUtility.FromJson<StoryPart>(asset.text);
+            string fileContent = System.IO.File.ReadAllText(filePath);
+            StoryPart part = JsonUtility.FromJson<StoryPart>(fileContent);
             StoryParts.Add(part.roomID, part);
         }
         Debug.Log("Story Manager Init finished");
