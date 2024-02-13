@@ -5,28 +5,40 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Der Stage Manager ist für die Verwaltung der Anzeigeelemente
 public class StageManager : MonoBehaviour
 {
     public GameObject mainObject;
 
-    
     public TextMeshProUGUI mainText;
 
+    // Hier wird der Story Manager Initialisiert 
     void Awake()
     {
+        // Als erstes wird die Stage Manager Komponente als DontDestroy on load deklariert
         DontDestroyOnLoad(GetComponent<StageManager>());
+        // Hier wird der Haupttext aus der Szene gesucht
         mainText = GameObject.Find("Placeholder").GetComponent<TextMeshProUGUI>();
         Debug.Log("Stage Manager Init finished");
     }
 
+    // Diese Funktion aktualisiert den angezeigten Text
     public void UpdateText(StoryPart newContent)
-    { 
+    {
+        // Als erstes  werden die Wegebuttons aus dem Runmanager abgefragt
         GameObject[] optionButtons = GetComponent<RunManager>().optionButtons;
+        // Hier wird der Haupttext verändert
         mainText.SetText(newContent.description);
+        // Der erste Schritt für die Option Buttons ist es alle auf aktiv zu setzen
         optionButtons[0].SetActive(true);
         optionButtons[1].SetActive(true);
         optionButtons[2].SetActive(true);
         optionButtons[3].SetActive(true);
+        /*
+         * In dem Switch wird dann anhand der Länge der Liste der Abzweigungen des anzuzeigenden Story Parts
+         * die OptionButtons verändert. Dies läuft immer nach dem Gleichen Muster
+         * es wird die Menge an vorhandenen Optionen angezeigt und dann der Rest der Knöpfe deativiert 
+         */
         switch (newContent.abzweigungen.Length)
         {
             case 1:
