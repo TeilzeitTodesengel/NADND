@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +14,19 @@ public class StageManager : MonoBehaviour
 
     public TextMeshProUGUI mainText;
 
+    public Canvas combat;
+    public Canvas story;
+    public TextMeshProUGUI combatLog;
+    public TextMeshProUGUI equippedItemText;
+    public TextMeshProUGUI monsterNameText;
+    public TextMeshProUGUI healthText;
+    public Button lightATK;
+    public Button heavyATK;
+    public Button combatWon;
+
+    private int combatLogLength = 0;
+
+    private List<String> combatLogList = new List<string>();
     // Hier wird der Story Manager Initialisiert 
     void Awake()
     {
@@ -20,6 +35,22 @@ public class StageManager : MonoBehaviour
         // Hier wird der Haupttext aus der Szene gesucht
         mainText = GameObject.Find("Placeholder").GetComponent<TextMeshProUGUI>();
         Debug.Log("Stage Manager Init finished");
+        combatWon.GetComponent<Button>().onClick.AddListener(
+            delegate
+            {
+                SwitchUI();
+                UpdateText(GetComponent<RunManager>().currentPart);
+            });
+        lightATK.GetComponent<Button>().onClick.AddListener(
+            delegate
+            {
+                GetComponent<RunManager>().LightAttack();
+            });
+        heavyATK.GetComponent<Button>().onClick.AddListener(
+            delegate
+            {
+                GetComponent<RunManager>().HeavyAttack();
+            });
     }
 
     // Diese Funktion aktualisiert den angezeigten Text
@@ -72,5 +103,60 @@ public class StageManager : MonoBehaviour
                 optionButtons[3].SetActive(false);
                 break;
         }
+    }
+
+    public void UpdateCombatLog(string textToAdd)
+    {
+        StringBuilder combatLogStringBuilder = new StringBuilder();
+
+        if (combatLogLength < 7)
+        {
+            combatLogList.Add(textToAdd);
+            combatLogLength = combatLogLength + 1;
+        }
+        else
+        {
+            combatLogList.RemoveAt(0);
+            combatLogList.Add(textToAdd);
+        }
+
+        foreach (string s in combatLogList)
+        {
+            combatLogStringBuilder.Append(s + "\n");
+        }
+        combatLog.text = combatLogStringBuilder.ToString();
+    }
+
+    public void SwitchUI()
+    {
+        if (GetComponent<RunManager>().isCombat)
+        {
+            story.gameObject.SetActive(false);
+            combat.gameObject.SetActive(true);
+        }
+        else
+        {
+            combat.gameObject.SetActive(false);
+            story.gameObject.SetActive(true);
+        }
+    }
+
+    public void SwitchCombatUI()
+    {
+        lightATK.gameObject.SetActive(false);
+        heavyATK.gameObject.SetActive(false);
+        combatWon.gameObject.SetActive(true);
+    }
+
+    public void InitializeCombatUI(string equippedItem, string monsterName)
+    {
+        equippedItemText.text = equippedItem;
+        monsterNameText.text = monsterName;
+        UpdateHealth();
+    }
+
+    public void UpdateHealth()
+    {
+        healthText.text = "Leben: " + GetComponent<RunManager>().health;
     }
 }
