@@ -76,19 +76,8 @@ public class StoryManager : MonoBehaviour
         StoryPart partToLoad = StoryParts[partToLoadID];
         // Dann wird der currentPart Eigenschaft von RunManager der partToLoad zugewiesen   
         GetComponent<RunManager>().currentPart = partToLoad;
-
-        // Es wird geprüft, ob der Raum einen Kampf beinhaltet.
-        if (partToLoad.isFight)
-        {
-            GetComponent<RunManager>().isCombat = true;
-            GetComponent<RunManager>().StartCombat();
-        }
-        else
-        {
-            // Hier wird der angezeigte Text verändert
-            GetComponent<StageManager>().UpdateText(partToLoad);
-        }
-        
+        // Hier wird der angezeigte Text verändert
+        GetComponent<StageManager>().UpdateText(partToLoad);
         // Hier wird die passende Musik geladen und abgespielt
         if (partToLoad.roomName == "start")
         {
@@ -102,6 +91,7 @@ public class StoryManager : MonoBehaviour
             GetComponent<AudioSource>().clip = audioClips[partToLoad.musicID];
             GetComponent<AudioSource>().Play();
         }
+        
 
     }
 

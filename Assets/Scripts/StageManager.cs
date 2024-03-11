@@ -11,7 +11,7 @@ public class StageManager : MonoBehaviour
     public GameObject mainObject;
 
     public TextMeshProUGUI mainText;
-    
+
     // Hier wird der Story Manager Initialisiert 
     void Awake()
     {
@@ -71,15 +71,6 @@ public class StageManager : MonoBehaviour
                 optionButtons[2].SetActive(false);
                 optionButtons[3].SetActive(false);
                 break;
-        }
-    }
-
-    public void SwitchUIMode()
-    {
-        if (GetComponent<RunManager>().isCombat)
-        {
-            GameObject.Find("Story").SetActive(false);
-            GameObject.Find("Combat").SetActive(true);
         }
     }
 }
