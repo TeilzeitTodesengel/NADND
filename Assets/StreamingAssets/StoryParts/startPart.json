@@ -12,8 +12,8 @@
     },
     "abzweigungen": [
         {
-            "description": "Abzweigung i",
-            "targetID": "r2",
+            "description": "Debug Fight",
+            "targetID": "debugFight",
             "loot": {
                 "Name": "",
                 "Description": "",

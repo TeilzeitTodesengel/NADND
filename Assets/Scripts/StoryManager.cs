@@ -41,8 +41,19 @@ public class StoryManager : MonoBehaviour
         StoryPart partToLoad = StoryParts[partToLoadID];
         // Dann wird der currentPart Eigenschaft von RunManager der partToLoad zugewiesen   
         GetComponent<RunManager>().currentPart = partToLoad;
-        // Hier wird der angezeigte Text verändert
-        GetComponent<StageManager>().UpdateText(partToLoad);
+
+        // Es wird geprüft, ob der Raum einen Kampf beinhaltet.
+        if (partToLoad.isFight)
+        {
+            GetComponent<RunManager>().isCombat = true;
+            GetComponent<RunManager>().StartCombat();
+        }
+        else
+        {
+            // Hier wird der angezeigte Text verändert
+            GetComponent<StageManager>().UpdateText(partToLoad);
+        }
+        
     }
 
     // Diese Funktion macht essentiell das selbe wie LoadPart(). Allerdings gibt man hier als Argument die Nummer
