@@ -1,19 +1,19 @@
 {
-    "roomID": "r2",
+    "roomID": "debugFight",
     "roomName": "Raum 2",
     "description": "Das ist der erste Kamp des Abenteuers",
     "musicID": "placeholder",
     "isFight": true,
     "fight": {
         "Monster": {
-            "Name": "Imp",
+            "Name": "Golem",
             "Staerke": 1,
             "Wiederstandskraft": 1
         }
     },
     "abzweigungen": [
         {
-            "description": "Abzweigung i",
+            "description": "Ende",
             "targetID": "ende",
             "loot": {
                 "Name": "Feuerschwert des Verderbens",
@@ -22,7 +22,7 @@
             }
         },
         {
-            "description": "Abzweigung ii",
+            "description": "Ende",
             "targetID": "ende",
             "loot": {
                 "Name": "",
@@ -31,7 +31,7 @@
             }
         },
         {
-            "description": "Abzweigung iiii",
+            "description": "Ende",
             "targetID": "ende",
             "loot": {
                 "Name": "",
@@ -40,7 +40,7 @@
             }
         },
         {
-            "description": "Abzweigung iv",
+            "description": "Ende",
             "targetID": "ende",
             "loot": {
                 "Name": "",

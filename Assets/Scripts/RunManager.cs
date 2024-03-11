@@ -16,6 +16,8 @@ public class RunManager : MonoBehaviour
 
     public GameObject[] optionButtons = new GameObject[4] ;
 
+    public bool isCombat = false; 
+    
     // Hier ist der erste Teil der Initialisierung des RunManagers.
     // Dazu werden die OptionButtons aus der Szene abgefragt und dann in ein Array gepackt. (getOptionButtons())
     private void Awake()
@@ -61,7 +63,12 @@ public class RunManager : MonoBehaviour
                 GetComponent<StoryManager>().LoadSelectedPath(3);
             });
         
-    }   
+    }
+
+    public void StartCombat()
+    {
+        
+    }
 
     
 }
