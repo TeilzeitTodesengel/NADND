@@ -2,6 +2,7 @@
     "roomID": "start",
     "roomName": "Start",
     "description": "d,sjrgkjsrkjgf ist der Start des Abenteuers",
+    "musicID": "start",
     "isFight": false,
     "fight": {
         "Monster": {

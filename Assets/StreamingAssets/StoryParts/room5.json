@@ -2,6 +2,7 @@
     "roomID": "r5",
     "roomName": "Raum 5",
     "description": "Das ist der erste Kamp des Abenteuers",
+    "musicID": "placeholder",
     "isFight": true,
     "fight": {
         "Monster": {
