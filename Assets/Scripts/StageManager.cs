@@ -105,6 +105,8 @@ public class StageManager : MonoBehaviour
         }
     }
 
+    // Diese Funktion hängt an den Combat Log den angegeben Text an, wenn die maximalen Länge von 7 dadurch überschritten
+    // wird, wird der älteste Eintrag ersetzt
     public void UpdateCombatLog(string textToAdd)
     {
         StringBuilder combatLogStringBuilder = new StringBuilder();
@@ -127,6 +129,7 @@ public class StageManager : MonoBehaviour
         combatLog.text = combatLogStringBuilder.ToString();
     }
 
+    // Wechselt zwischen dem normalen und dem Kampf UI
     public void SwitchUI()
     {
         if (GetComponent<RunManager>().isCombat)
@@ -141,22 +144,28 @@ public class StageManager : MonoBehaviour
         }
     }
 
-    public void SwitchCombatUI()
+    // Verändert die Buttons im Combat so, dass der Sieg Button angezeigt wird.
+    public void WonCombatUI()
     {
         lightATK.gameObject.SetActive(false);
         heavyATK.gameObject.SetActive(false);
         combatWon.gameObject.SetActive(true);
     }
 
+    // Initialisiert das UI für den Kampf, indem der Combat Log geleert wird, das ausgerüstete Item angezeigt wird, der
+    // Monstername angezeigt wird und TODO: der Montername angezeigt wird
     public void InitializeCombatUI(string equippedItem, string monsterName)
     {
         equippedItemText.text = equippedItem;
         monsterNameText.text = monsterName;
+        combatLogList.Clear();
+        combatLog.text = "";
+        combatLogLength = 0;
         UpdateHealth();
     }
 
     public void UpdateHealth()
     {
-        healthText.text = "Leben: " + GetComponent<RunManager>().health;
+        healthText.text = "Leben: " + GetComponent<RunManager>().GetHealth();
     }
 }

@@ -10,20 +10,20 @@ using Random = System.Random;
  */
 public class RunManager : MonoBehaviour
 {
-    
+
     public StoryPart currentPart;
-    public int health = 20;
+    public int startHealth = 20;
+    public int healFactor = 1;
     public List<Item> items = new List<Item>();
     public GameObject mainObject;
     public Item equippedItem = new Item("Faust", "Deine Faust zu nichts gut", 0);
 
-    [HideInInspector]
-    public bool isCombat = false;
-    
-    public GameObject[] optionButtons = new GameObject[4] ;
+    [HideInInspector] public bool isCombat = false;
 
-    
+    public GameObject[] optionButtons = new GameObject[4];
     public Monster currentMonster;
+
+    private int health;
 
     // Hier ist der erste Teil der Initialisierung des RunManagers.
     // Dazu werden die OptionButtons aus der Szene abgefragt und dann in ein Array gepackt. (getOptionButtons())
@@ -31,6 +31,7 @@ public class RunManager : MonoBehaviour
     {
         GetOptionButtons();
         Debug.Log("Run Manager Init Finished");
+        health = startHealth;
     }
 
     // Im zweiten Teil der Initialisierung wird der RunManager als DontDestroyOnLoad geflagt und es wird
@@ -43,12 +44,14 @@ public class RunManager : MonoBehaviour
 
     private void Update()
     {
+        // Es wird geprüft, wenn sich der Spieler im Kampf befindet, ob das Monster 0 oder weniger Leben hat.
+        // Wenn das zutrifft ist der Kampf beendet, und der Sieg Button wird eingeblendet.
         if (isCombat)
         {
             if (currentMonster.Wiederstandskraft <= 0)
             {
                 isCombat = false;
-                GetComponent<StageManager>().SwitchCombatUI();
+                GetComponent<StageManager>().WonCombatUI();
             }
         }
     }
@@ -60,28 +63,16 @@ public class RunManager : MonoBehaviour
         {
             optionButtons[i] = GameObject.Find("Option" + (i + 1));
         }
-        
+
         optionButtons[0].GetComponent<Button>().onClick.AddListener(
-            delegate
-            {
-                GetComponent<StoryManager>().LoadSelectedPath(0);
-            });
+            delegate { GetComponent<StoryManager>().LoadSelectedPath(0); });
         optionButtons[1].GetComponent<Button>().onClick.AddListener(
-            delegate
-            {
-                GetComponent<StoryManager>().LoadSelectedPath(1);
-            });
+            delegate { GetComponent<StoryManager>().LoadSelectedPath(1); });
         optionButtons[2].GetComponent<Button>().onClick.AddListener(
-            delegate
-            {
-                GetComponent<StoryManager>().LoadSelectedPath(2);
-            });
+            delegate { GetComponent<StoryManager>().LoadSelectedPath(2); });
         optionButtons[3].GetComponent<Button>().onClick.AddListener(
-            delegate
-            {
-                GetComponent<StoryManager>().LoadSelectedPath(3);
-            });
-        
+            delegate { GetComponent<StoryManager>().LoadSelectedPath(3); });
+
     }
 
     // Startet einen Kampf
@@ -94,13 +85,16 @@ public class RunManager : MonoBehaviour
         GetComponent<StageManager>().InitializeCombatUI(equippedItem.Name, currentMonster.Name);
     }
 
+    // Der normale Angriff mach den angegebenen Waffenschaden. Die Trefferchance ist 100%
     public void LightAttack()
     {
         currentMonster.Wiederstandskraft -= equippedItem.Damage;
         GetComponent<StageManager>().UpdateCombatLog("Du hast " + equippedItem.Damage + " Schaden gemacht.");
         MonsterAttack();
     }
-    
+
+    // Der schwere Angriff mach doppelten Schaden. Allerdings kann trifft diese nicht immer, die Chance wird momentan nur im Code
+    // festgelegt. Wenn die ausgerüstete Waffe 0 Schaden macht, macht die Heavy Attack 1 Schaden.
     public void HeavyAttack()
     {
         Random rand = new Random();
@@ -115,10 +109,11 @@ public class RunManager : MonoBehaviour
             else
             {
                 currentMonster.Wiederstandskraft -= equippedItem.Damage * 2;
-                GetComponent<StageManager>().UpdateCombatLog("Du hast " + equippedItem.Damage * 2 + " Schaden gemacht.");
+                GetComponent<StageManager>()
+                    .UpdateCombatLog("Du hast " + equippedItem.Damage * 2 + " Schaden gemacht.");
                 MonsterAttack();
             }
-            
+
         }
         else
         {
@@ -127,10 +122,34 @@ public class RunManager : MonoBehaviour
         }
     }
 
+    // Macht den Schaden des Monsters an dem Spieler
     void MonsterAttack()
     {
         health -= currentMonster.Staerke;
-        GetComponent<StageManager>().UpdateCombatLog("Das Monster trifft dich für " + currentMonster.Staerke + " Schaden.");
+        GetComponent<StageManager>()
+            .UpdateCombatLog("Das Monster trifft dich für " + currentMonster.Staerke + " Schaden.");
         GetComponent<StageManager>().UpdateHealth();
+    }
+
+    // Gibt das aktuelle Leben zurück
+    public int GetHealth()
+    {
+        return health;
+    }
+    
+    /* Heilt den Spieler um den Healfactor. Wenn das aktuelle Leben dadurch das maximale Leben übersteigt wird es 
+       auf das Startleben gesetzt */
+    public void Heal()
+    {
+        if (health < startHealth)
+        {
+            health += healFactor;    
+        }
+
+        if (health > startHealth)
+        {
+            health = startHealth;
+        }
+        
     }
 }

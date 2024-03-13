@@ -1,20 +1,20 @@
 {
-    "roomID": "start",
-    "roomName": "Start",
-    "description": "Das ist der Start des Abenteuers",
-    "musicID": "start",
-    "isFight": false,
+    "roomID": "debugCombat1",
+    "roomName": "Debug Combat 1",
+    "description": "Debug Combat 1",
+    "musicID": "placeholder",
+    "isFight": true,
     "fight": {
         "Monster": {
-            "Name": "",
-            "Staerke": 0,
-            "Wiederstandskraft": 0
+            "Name": "Golem",
+            "Staerke": 1,
+            "Wiederstandskraft": 1
         }
     },
     "abzweigungen": [
         {
-            "description": "Debug Combat 1",
-            "targetID": "debugCombat1",
+            "description": "Debug Loot 1",
+            "targetID": "debugLoot1",
             "loot": {
                 "Name": "",
                 "Description": "",
@@ -23,7 +23,7 @@
         },
         {
             "description": "Abzweigung ii",
-            "targetID": "r3",
+            "targetID": "ende",
             "loot": {
                 "Name": "",
                 "Description": "",
@@ -31,8 +31,8 @@
             }
         },
         {
-            "description": "Abzweigung iii",
-            "targetID": "r4",
+            "description": "Abzweigung iiii",
+            "targetID": "ende",
             "loot": {
                 "Name": "",
                 "Description": "",
@@ -41,7 +41,7 @@
         },
         {
             "description": "Abzweigung iv",
-            "targetID": "r5",
+            "targetID": "ende",
             "loot": {
                 "Name": "",
                 "Description": "",

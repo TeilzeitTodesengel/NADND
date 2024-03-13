@@ -89,7 +89,7 @@ public class StoryManager : MonoBehaviour
             // Hier wird die passende Musik geladen und abgespielt
         }
         
-        
+        // Es wird geprft ob es der erste Raum ist. So wird immer der Startmusikclip gespielt
         if (partToLoad.roomName == "start")
         {
             GetComponent<AudioSource>().Stop();
@@ -97,6 +97,7 @@ public class StoryManager : MonoBehaviour
             GetComponent<AudioSource>().Play();
         }
         else
+        // Sonst wird der im Story Part angegebene Sound gespielt
         {
             GetComponent<AudioSource>().Stop();
             GetComponent<AudioSource>().clip = audioClips[partToLoad.musicID];
@@ -110,10 +111,12 @@ public class StoryManager : MonoBehaviour
     // des ausgewählten Pfades ein. Die Funktion lädt dann aus dem currentPart die ID des zu ladedenden Story Parts  
     public void LoadSelectedPath(int selectedPath)
     {
+        GetComponent<RunManager>().Heal();
         string roomToLoad = GetComponent<RunManager>().currentPart.abzweigungen[selectedPath].targetID;
         LoadPart(roomToLoad);
     }
 
+    // Subroutine, um alle MP3 Dateien aus dem Streaming assets Ordner zu laden und in das audioClips Dictionary einzufügen 
     private IEnumerator LoadMP3File(string path, string fileName)
     {
         // Macht aus dem Dateipafd eine URI an das lokale Dateisystem
@@ -128,6 +131,7 @@ public class StoryManager : MonoBehaviour
         audioClips.Add(fileName, clip);
     }
     
+    // Subroutine, um alle WAV Dateien aus dem Streaming assets Ordner zu laden und in das audioClips Dictionary einzufügen
     private IEnumerator LoadWAVFile(string path, string fileName)
     {
         // Macht aus dem Dateipafd eine URI an das lokale Dateisystem
@@ -142,6 +146,7 @@ public class StoryManager : MonoBehaviour
         audioClips.Add(fileName, clip);
     }
     
+    // Subroutine, um alle OGG Dateien aus dem Streaming assets Ordner zu laden und in das audioClips Dictionary einzufügen
     private IEnumerator LoadOGGFile(string path, string fileName)
     {
         // Macht aus dem Dateipafd eine URI an das lokale Dateisystem
