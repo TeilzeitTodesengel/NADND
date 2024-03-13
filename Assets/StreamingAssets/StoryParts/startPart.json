@@ -22,12 +22,12 @@
             }
         },
         {
-            "description": "Abzweigung ii",
-            "targetID": "r3",
+            "description": "Debug Loot 1",
+            "targetID": "debugLoot1",
             "loot": {
-                "Name": "",
+                "Name": "Schwert",
                 "Description": "",
-                "Damage": 0
+                "Damage": 1
             }
         },
         {

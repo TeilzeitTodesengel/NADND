@@ -152,4 +152,22 @@ public class RunManager : MonoBehaviour
         }
         
     }
+
+    // Fügt der Item-Liste, welche das Inventar repräsentiert ein Item hinzu, wenn es noch nicht in der Liste vorhanden ist
+    public void AddItem(Item itemToAdd)
+    {
+        if (!items.Contains(itemToAdd))
+        {
+            items.Add(itemToAdd);    
+        }
+    }
+
+    // Rüstet ein Item aus, falls es im Inventar vorhanden ist
+    public void EquipItem(Item itemToEquip)
+    {
+        if (items.Contains(itemToEquip))
+        {
+            equippedItem = itemToEquip;
+        }
+    }
 }

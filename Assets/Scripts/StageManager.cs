@@ -6,7 +6,6 @@ using System.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
 // Der Stage Manager ist für die Verwaltung der Anzeigeelemente
 public class StageManager : MonoBehaviour
 {
@@ -23,7 +22,7 @@ public class StageManager : MonoBehaviour
     public Button lightATK;
     public Button heavyATK;
     public Button combatWon;
-
+    public Image monsterImage;
     private int combatLogLength = 0;
 
     private List<String> combatLogList = new List<string>();
@@ -35,6 +34,7 @@ public class StageManager : MonoBehaviour
         // Hier wird der Haupttext aus der Szene gesucht
         mainText = GameObject.Find("Placeholder").GetComponent<TextMeshProUGUI>();
         Debug.Log("Stage Manager Init finished");
+        // Die Funktionszuweisungen für die einzelnen Buttons im KampfUI
         combatWon.GetComponent<Button>().onClick.AddListener(
             delegate
             {
@@ -105,13 +105,13 @@ public class StageManager : MonoBehaviour
         }
     }
 
-    // Diese Funktion hängt an den Combat Log den angegeben Text an, wenn die maximalen Länge von 7 dadurch überschritten
+    // Diese Funktion hängt an den Combat Log den angegeben Text an, wenn die maximalen Länge von 9 dadurch überschritten
     // wird, wird der älteste Eintrag ersetzt
     public void UpdateCombatLog(string textToAdd)
     {
         StringBuilder combatLogStringBuilder = new StringBuilder();
 
-        if (combatLogLength < 7)
+        if (combatLogLength < 9)
         {
             combatLogList.Add(textToAdd);
             combatLogLength = combatLogLength + 1;
@@ -153,7 +153,7 @@ public class StageManager : MonoBehaviour
     }
 
     // Initialisiert das UI für den Kampf, indem der Combat Log geleert wird, das ausgerüstete Item angezeigt wird, der
-    // Monstername angezeigt wird und TODO: der Montername angezeigt wird
+    // Monstername angezeigt wird und das Monsterbild angezeigt wird
     public void InitializeCombatUI(string equippedItem, string monsterName)
     {
         equippedItemText.text = equippedItem;
@@ -162,10 +162,27 @@ public class StageManager : MonoBehaviour
         combatLog.text = "";
         combatLogLength = 0;
         UpdateHealth();
+        StartCoroutine(LoadMonsterImage(monsterName));
     }
 
+    // Updatet den Lebenstext im Kampf
     public void UpdateHealth()
     {
         healthText.text = "Leben: " + GetComponent<RunManager>().GetHealth();
+    }
+
+    // Diese Coroutine lädt das Bild des Monsters. Der Dateiname muss gleich dem Monsternamen sein. Es wird nur png unterstützt.
+    private IEnumerator LoadMonsterImage(string monsterToLoad)
+    {
+        byte[] imageData = System.IO.File.ReadAllBytes(Application.streamingAssetsPath + "/MonsterImages/" + monsterToLoad + ".png");
+        yield return 0;
+        Texture2D monsterTex = new Texture2D(2, 2);
+        monsterTex.LoadImage(imageData);
+        Sprite monsterSprite = Sprite.Create(
+            monsterTex, // Textur, die aus der Datei geladen wurde
+            new Rect(0.0f, 0.0f, monsterTex.width, monsterTex.height), // Grenzrechteck der Textur. Hat die Höhe und Weite der geladenen Textur
+            new Vector2(0.5f, 0.5f), // Ankerpunkt der Textur relativ zur Ecke oben Links
+            100.0f); // Ist für Unity für das Texturscaling
+        monsterImage.sprite = monsterSprite;
     }
 }

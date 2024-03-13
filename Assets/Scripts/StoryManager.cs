@@ -113,6 +113,11 @@ public class StoryManager : MonoBehaviour
     {
         GetComponent<RunManager>().Heal();
         string roomToLoad = GetComponent<RunManager>().currentPart.abzweigungen[selectedPath].targetID;
+        if (GetComponent<RunManager>().currentPart.abzweigungen[selectedPath].loot.Name != "")
+        {
+            GetComponent<RunManager>().AddItem(GetComponent<RunManager>().currentPart.abzweigungen[selectedPath].loot);
+            GetComponent<RunManager>().EquipItem(GetComponent<RunManager>().currentPart.abzweigungen[selectedPath].loot);
+        }
         LoadPart(roomToLoad);
     }
 
