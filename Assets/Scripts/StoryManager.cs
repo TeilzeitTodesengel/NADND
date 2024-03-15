@@ -60,7 +60,7 @@ public class StoryManager : MonoBehaviour
             StartCoroutine(LoadWAVFile(filePath, fileName));
         }
         
-        // Schleife um WAV Dateien von der Festplatte zu laden
+        // Schleife um OGG Dateien von der Festplatte zu laden
         foreach (string filePath in  Directory.GetFiles(streamingAssetPath + "/Music").Where(filename => filename.EndsWith(".ogg")))
         {
             string fileName = filePath.Split(".")[0].Split("\\").Last();

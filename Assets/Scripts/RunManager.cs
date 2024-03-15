@@ -51,7 +51,7 @@ public class RunManager : MonoBehaviour
             if (currentMonster.Wiederstandskraft <= 0)
             {
                 isCombat = false;
-                GetComponent<StageManager>().WonCombatUI();
+                GetComponent<StageManager>().SwitchCombatUI(true);
             }
         }
     }
@@ -104,6 +104,7 @@ public class RunManager : MonoBehaviour
             {
                 currentMonster.Wiederstandskraft -= 1;
                 GetComponent<StageManager>().UpdateCombatLog("Du hast 1 Schaden gemacht.");
+                MonsterAttack();
 
             }
             else

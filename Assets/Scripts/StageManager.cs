@@ -145,11 +145,21 @@ public class StageManager : MonoBehaviour
     }
 
     // Verändert die Buttons im Combat so, dass der Sieg Button angezeigt wird.
-    public void WonCombatUI()
+    public void SwitchCombatUI(bool isWon)
     {
-        lightATK.gameObject.SetActive(false);
-        heavyATK.gameObject.SetActive(false);
-        combatWon.gameObject.SetActive(true);
+        if (isWon)
+        {
+            lightATK.gameObject.SetActive(false);
+            heavyATK.gameObject.SetActive(false);
+            combatWon.gameObject.SetActive(true);
+        }
+        else
+        {
+            lightATK.gameObject.SetActive(true);
+            heavyATK.gameObject.SetActive(true);
+            combatWon.gameObject.SetActive(false);
+        }
+        
     }
 
     // Initialisiert das UI für den Kampf, indem der Combat Log geleert wird, das ausgerüstete Item angezeigt wird, der
@@ -161,6 +171,7 @@ public class StageManager : MonoBehaviour
         combatLogList.Clear();
         combatLog.text = "";
         combatLogLength = 0;
+        SwitchCombatUI(false);
         UpdateHealth();
         StartCoroutine(LoadMonsterImage(monsterName));
     }
