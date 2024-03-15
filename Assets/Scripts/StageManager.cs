@@ -22,6 +22,7 @@ public class StageManager : MonoBehaviour
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI itemName;
     public TextMeshProUGUI itemDescription;
+    public TextMeshProUGUI itemDamage;
     public TMP_Dropdown itemSelector;
     public GameObject invDisplay;
     public Button lightATK;
@@ -254,5 +255,6 @@ public class StageManager : MonoBehaviour
     {
         itemName.text = GetComponent<RunManager>().equippedItem.Name;
         itemDescription.text = "Description: " + GetComponent<RunManager>().equippedItem.Description;
+        itemDamage.text = "Schaden: " + GetComponent<RunManager>().equippedItem.Damage;
     }
 }
