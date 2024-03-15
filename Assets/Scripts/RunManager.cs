@@ -16,7 +16,7 @@ public class RunManager : MonoBehaviour
     public int healFactor = 1;
     public List<Item> items = new List<Item>();
     public GameObject mainObject;
-    public Item equippedItem = new Item("Faust", "Deine Faust zu nichts gut", 0);
+    public Item equippedItem;
 
     [HideInInspector] public bool isCombat = false;
 
@@ -40,6 +40,9 @@ public class RunManager : MonoBehaviour
     {
         DontDestroyOnLoad(GetComponent<RunManager>());
         GetComponent<StoryManager>().LoadPart("start");
+        Item startWeapon = new Item("Faust", "Deine Faust zu nichts gut", 0);
+        AddItem(startWeapon);
+        EquipItem(startWeapon);
     }
 
     private void Update()

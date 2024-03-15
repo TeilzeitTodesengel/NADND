@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 // Der Stage Manager ist für die Verwaltung der Anzeigeelemente
 public class StageManager : MonoBehaviour
@@ -19,9 +20,14 @@ public class StageManager : MonoBehaviour
     public TextMeshProUGUI equippedItemText;
     public TextMeshProUGUI monsterNameText;
     public TextMeshProUGUI healthText;
+    public TextMeshProUGUI itemName;
+    public TextMeshProUGUI itemDescription;
+    public TMP_Dropdown itemSelector;
+    public GameObject invDisplay;
     public Button lightATK;
     public Button heavyATK;
     public Button combatWon;
+    public Button openINVButton;
     public Image monsterImage;
     private int combatLogLength = 0;
 
@@ -51,6 +57,18 @@ public class StageManager : MonoBehaviour
             {
                 GetComponent<RunManager>().HeavyAttack();
             });
+        
+        openINVButton.GetComponent<Button>().onClick.AddListener(
+            delegate
+            {
+                ToggleInv();
+            }
+            );
+        itemSelector.onValueChanged.AddListener( call: indexSelected =>
+        {
+            GetComponent<RunManager>().equippedItem = GetComponent<RunManager>().items[indexSelected];
+            DisplayEquippedItem();
+        });
     }
 
     // Diese Funktion aktualisiert den angezeigten Text
@@ -195,5 +213,46 @@ public class StageManager : MonoBehaviour
             new Vector2(0.5f, 0.5f), // Ankerpunkt der Textur relativ zur Ecke oben Links
             100.0f); // Ist für Unity für das Texturscaling
         monsterImage.sprite = monsterSprite;
+    }
+
+
+    private void OnItemSelected()
+    {
+        
+    }
+
+    private void ToggleInv()
+    {
+        if (invDisplay.activeSelf)
+        {
+            invDisplay.SetActive(false);
+        } else {
+            invDisplay.SetActive(true);
+            UpdateItemSelector();
+            DisplayEquippedItem();
+        }
+    }
+
+    private void UpdateItemSelector()
+    {
+        int loopCounter = 0;
+        itemSelector.options.Clear();
+
+        foreach (Item item in GetComponent<RunManager>().items)
+        {
+            itemSelector.options.Add(new TMP_Dropdown.OptionData(item.Name));
+            if (GetComponent<RunManager>().equippedItem.Name == item.Name)
+            {
+                itemSelector.value = loopCounter;
+            }
+
+            loopCounter++;
+        }
+    }
+
+    private void DisplayEquippedItem()
+    {
+        itemName.text = GetComponent<RunManager>().equippedItem.Name;
+        itemDescription.text = "Description: " + GetComponent<RunManager>().equippedItem.Description;
     }
 }
