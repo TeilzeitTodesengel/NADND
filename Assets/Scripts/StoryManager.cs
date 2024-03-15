@@ -99,9 +99,17 @@ public class StoryManager : MonoBehaviour
         else
         // Sonst wird der im Story Part angegebene Sound gespielt
         {
-            GetComponent<AudioSource>().Stop();
-            GetComponent<AudioSource>().clip = audioClips[partToLoad.musicID];
-            GetComponent<AudioSource>().Play();
+            try
+            {
+                GetComponent<AudioSource>().Stop();
+                GetComponent<AudioSource>().clip = audioClips[partToLoad.musicID];
+                GetComponent<AudioSource>().Play();
+            }
+            catch (KeyNotFoundException  e)
+            {
+                Debug.LogError("The Music Key: \"" + partToLoad.musicID + "\" is not present in Dictionary.");
+            }
+            
         }
         
 

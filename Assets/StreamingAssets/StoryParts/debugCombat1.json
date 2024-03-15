@@ -16,9 +16,9 @@
             "description": "Debug Loot 1",
             "targetID": "debugLoot1",
             "loot": {
-                "Name": "",
-                "Description": "",
-                "Damage": 0
+                "Name": "Schwert",
+                "Description": "Das ist ein Schwert",
+                "Damage": 5
             }
         },
         {
