@@ -11,9 +11,7 @@ using UnityEngine.UI;
 public class StageManager : MonoBehaviour
 {
     public GameObject mainObject;
-
     public TextMeshProUGUI mainText;
-
     public Canvas combat;
     public Canvas story;
     public TextMeshProUGUI combatLog;
@@ -23,6 +21,7 @@ public class StageManager : MonoBehaviour
     public TextMeshProUGUI itemName;
     public TextMeshProUGUI itemDescription;
     public TextMeshProUGUI itemDamage;
+    public TextMeshProUGUI combatWeaponName;
     public TMP_Dropdown itemSelector;
     public GameObject invDisplay;
     public Button lightATK;
@@ -216,12 +215,7 @@ public class StageManager : MonoBehaviour
         monsterImage.sprite = monsterSprite;
     }
 
-
-    private void OnItemSelected()
-    {
-        
-    }
-
+    // Diese Funktion öffnet und schließt das Inventar-Overlay
     private void ToggleInv()
     {
         if (invDisplay.activeSelf)
@@ -233,7 +227,8 @@ public class StageManager : MonoBehaviour
             DisplayEquippedItem();
         }
     }
-
+    
+    // Diese Funktion fügt in das Item-Dropdown die Items aus dem Inventar hinzu 
     private void UpdateItemSelector()
     {
         int loopCounter = 0;
@@ -251,9 +246,12 @@ public class StageManager : MonoBehaviour
         }
     }
 
+    // Diese Funktion ändert die angezeigten Texte aus dem Inventar und dem Fighting Screen zu dem aktuell
+    // ausgerüstetem Item
     private void DisplayEquippedItem()
     {
         itemName.text = GetComponent<RunManager>().equippedItem.Name;
+        combatWeaponName.text = GetComponent<RunManager>().equippedItem.Name;
         itemDescription.text = "Description: " + GetComponent<RunManager>().equippedItem.Description;
         itemDamage.text = "Schaden: " + GetComponent<RunManager>().equippedItem.Damage;
     }
