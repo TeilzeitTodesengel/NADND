@@ -92,9 +92,9 @@ public class StageManager : MonoBehaviour
         {
             case 1:
                 optionButtons[0].GetComponentInChildren<TextMeshProUGUI>().text = newContent.abzweigungen[0].description;
-                optionButtons[0].SetActive(false);
-                optionButtons[0].SetActive(false);
-                optionButtons[0].SetActive(false);
+                optionButtons[1].SetActive(false);
+                optionButtons[2].SetActive(false);
+                optionButtons[3].SetActive(false);
                 break;
             case 2:
                 optionButtons[0].GetComponentInChildren<TextMeshProUGUI>().text = newContent.abzweigungen[0].description;
