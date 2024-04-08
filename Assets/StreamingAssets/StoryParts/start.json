@@ -1,0 +1,52 @@
+{
+    "roomID": "start",
+    "roomName": "Start",
+    "description": "Ankunft in Baldurs Gate",
+    "musicID": "placeholder", 
+    "isFight": true,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Ende",
+            "targetID": "ende",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Abzweigung ii",
+            "targetID": "ende",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Abzweigung iiii",
+            "targetID": "ende",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Abzweigung iv",
+            "targetID": "ende",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+    ]
+}
