@@ -1,9 +1,9 @@
 {
     "roomID": "start",
-    "roomName": "Start",
-    "description": "Ankunft in Baldurs Gate",
+    "roomName": "Ankunft in Baldurs Gate",
+    "description": "Willkommen in Baldur's Gate, einem wahren Nest von Ratten und Vipern, das sich an den felsigen Hängen über dem Fluss Chionthar festklammert. Von ihren Hochsitzen in der Oberstadt aus blicken die örtlichen Adligen - bekannt als Patriarchen - mit verschleierter Verachtung auf den gemeinen Pöbel in der schmutzigen Unterstadt herab, die sich an den nebligen Hafen schmiegt. Ganz Baldur's Gate stinkt nach Blut, Verbrechen und Möglichkeiten. Man kann sich leicht vorstellen, warum Piraten und Händler von diesem Ort angezogen werden wie die Fliegen von einem Kadaver. Folgt man dem Fluss weiter nach Osten, gelangt man schließlich nach Elturel, der Hauptstadt des heiligen Landes Elturgard - zumindest war das bis vor ein paar Tagen der Fall. Der Flüchtlingsstrom aus Elturel ist noch größer geworden, seit die Nachricht vom Fall der Stadt eingetroffen ist. Alle sagen, Baldur's Gate sei als nächstes dran, aber niemand weiß wirklich, wer oder was Elturel erobert hat. Übersetzt mit DeepL.com (kostenlose Version)",
     "musicID": "placeholder", 
-    "isFight": true,
+    "isFight": false,
     "fight": {
         "Monster": {
             "Name": "Damagetester",
@@ -13,8 +13,8 @@
     },
     "abzweigungen": [
         {
-            "description": "Ende",
-            "targetID": "ende",
+            "description": "Die Hochstadt untersuchen",
+            "targetID": "fist",
             "loot": {
                 "Name": "",
                 "Description": "",
@@ -22,8 +22,8 @@
             }
         },
         {
-            "description": "Abzweigung ii",
-            "targetID": "ende",
+            "description": "Die Unterstadt besuchen",
+            "targetID": "fist",
             "loot": {
                 "Name": "",
                 "Description": "",
@@ -31,17 +31,8 @@
             }
         },
         {
-            "description": "Abzweigung iiii",
-            "targetID": "ende",
-            "loot": {
-                "Name": "",
-                "Description": "",
-                "Damage": 0
-            }
-        },
-        {
-            "description": "Abzweigung iv",
-            "targetID": "ende",
+            "description": "Den Hafenbezirk untersuchen",
+            "targetID": "fist",
             "loot": {
                 "Name": "",
                 "Description": "",
