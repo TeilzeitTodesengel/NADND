@@ -1,9 +1,0 @@
-{
-    "roomID": "ende",
-    "roomName": "Ende",
-    "description": "Du glaubst du seist der mächtigste",
-    "musicID": "ende",
-    "isFight": false,
-    "fight": null,
-    "abzweigungen": null
-}

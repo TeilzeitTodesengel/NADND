@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.51847124, g: 0.8630669, b: 0.9691091, a: 1}
+  m_IndirectSpecularColor: {r: 0.51844877, g: 0.8630669, b: 0.9691091, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
+  m_sharedMaterial: {fileID: 2384928813555711290, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -208,8 +208,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2345,8 +2345,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ich bin Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ec2aad0931e1e7443a3e339c166f5aa9, type: 2}
-  m_sharedMaterial: {fileID: -8259407184492445705, guid: ec2aad0931e1e7443a3e339c166f5aa9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
+  m_sharedMaterial: {fileID: 2384928813555711290, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2370,8 +2370,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3358,8 +3358,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Open INV
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ec2aad0931e1e7443a3e339c166f5aa9, type: 2}
-  m_sharedMaterial: {fileID: -8259407184492445705, guid: ec2aad0931e1e7443a3e339c166f5aa9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
+  m_sharedMaterial: {fileID: 2384928813555711290, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5167,8 +5167,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
+  m_sharedMaterial: {fileID: 2384928813555711290, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5192,8 +5192,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5429,8 +5429,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
+  m_sharedMaterial: {fileID: 2384928813555711290, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5454,8 +5454,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5564,8 +5564,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
+  m_sharedMaterial: {fileID: 2384928813555711290, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5589,8 +5589,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
