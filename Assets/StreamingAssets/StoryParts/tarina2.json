@@ -1,0 +1,46 @@
+{
+    "roomID": "tarina2",
+    "roomName": "tarina2",
+    "description": "Sobald ihre Piratenfreunde erledigt sind, teilt Tarina dir folgendes mit. Einige Blocks nordwestlich von hier befindet sich ein öffentliches Badehaus mit einem ummauerten Garten und herumtollenden Nymphen, die in das Eingangstor eingemeißelt sind. Anhänger der Drei Toten wurden gesehen, wie sie aus dem Badehaus kamen und gingen, und mir wurde gesagt, dass es im Inneren eine Geheimtür gibt, die in ein Verlies führt und dort verstecken sich die Mörder. Wohin gehst du?",
+    "musicID": "placeholder", 
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Du gehst das Badehaus in der Oberstadt suchen.",
+            "targetID": "highCity",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+   
+        {
+            "description": "Du gehst das Badehaus in der Unterstadt suchen.",
+            "targetID": "underCity",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+
+        {
+            "description": "Du gehst das Badehaus im Hafenbezirk suchen.",
+            "targetID": "port",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+        
+    ]
+}

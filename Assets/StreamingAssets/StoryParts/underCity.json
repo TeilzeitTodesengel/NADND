@@ -1,0 +1,36 @@
+{
+    "roomID": "underCity",
+    "roomName": "underCity",
+    "description": "Du stehst vor dem Badehaus und es sieht herruntergekommen aus.  Seine Mauern, einst prunkvoll mit mosaikverzierten Fliesen geschmückt, sind nun von Moos und Ranken überwuchert. Das einst strahlende Dach, das den Glanz vergangener Tage widerspiegelte, ist von dunklen Wolken umhüllt. ",
+    "musicID": "placeholder", 
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Du beschließt das Badehaus genauer zu untersuchen.",
+            "targetID": "bathouseWrong",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+   
+        {
+            "description": "Du beschließt im Hafenbezirk zu suchen",
+            "targetID": "port",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+        
+    ]
+}
