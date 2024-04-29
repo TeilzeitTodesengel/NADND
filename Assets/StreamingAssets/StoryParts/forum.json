@@ -29,6 +29,15 @@
                 "Description": "",
                 "Damage": 0
             }
+        },
+        {
+            "description": "Den linken Massageraum betreten",
+            "targetID": "kungfu",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
         }
         
         
