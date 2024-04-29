@@ -868,8 +868,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -431, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -65.049, y: 0}
+  m_SizeDelta: {x: 130.0972, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &320523689
 GameObject:
@@ -1360,8 +1360,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -246.72247, y: 201}
-  m_SizeDelta: {x: 230.5551, y: 50}
+  m_AnchoredPosition: {x: -228.12, y: 201}
+  m_SizeDelta: {x: 267.76, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &519619739
 MonoBehaviour:
@@ -1385,8 +1385,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Equipped Item:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ec2aad0931e1e7443a3e339c166f5aa9, type: 2}
-  m_sharedMaterial: {fileID: -8259407184492445705, guid: ec2aad0931e1e7443a3e339c166f5aa9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
+  m_sharedMaterial: {fileID: 2384928813555711290, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1449,7 +1449,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &519619740
@@ -3222,8 +3222,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Description:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ec2aad0931e1e7443a3e339c166f5aa9, type: 2}
-  m_sharedMaterial: {fileID: -8259407184492445705, guid: ec2aad0931e1e7443a3e339c166f5aa9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
+  m_sharedMaterial: {fileID: 2384928813555711290, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3286,7 +3286,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1014278821
@@ -4152,8 +4152,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Name:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ec2aad0931e1e7443a3e339c166f5aa9, type: 2}
-  m_sharedMaterial: {fileID: -8259407184492445705, guid: ec2aad0931e1e7443a3e339c166f5aa9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
+  m_sharedMaterial: {fileID: 2384928813555711290, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4216,7 +4216,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1464963553
@@ -4286,8 +4286,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Schaden
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ec2aad0931e1e7443a3e339c166f5aa9, type: 2}
-  m_sharedMaterial: {fileID: -8259407184492445705, guid: ec2aad0931e1e7443a3e339c166f5aa9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
+  m_sharedMaterial: {fileID: 2384928813555711290, guid: 8063a1bd70a3f9e46b2a4fd24bba96e8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4350,7 +4350,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1492300989

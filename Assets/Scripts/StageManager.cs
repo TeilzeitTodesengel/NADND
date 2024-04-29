@@ -251,7 +251,7 @@ public class StageManager : MonoBehaviour
     private void DisplayEquippedItem()
     {
         itemName.text = GetComponent<RunManager>().equippedItem.Name;
-        combatWeaponName.text = GetComponent<RunManager>().equippedItem.Name;
+        //combatWeaponName.text = GetComponent<RunManager>().equippedItem.Name;
         itemDescription.text = "Description: " + GetComponent<RunManager>().equippedItem.Description;
         itemDamage.text = "Schaden: " + GetComponent<RunManager>().equippedItem.Damage;
     }
