@@ -1,0 +1,36 @@
+{
+    "roomID": "teakwondo",
+    "roomName": "teakwondo",
+    "description": "In diesem Raum steht ein Massagetisch, der mit sauberen Handtüchern bedeckt ist. Natürliches Licht fällt durch ein in die Südwand eingelassenes Buntglasfenster ein. Während der Stunden, in denen das Badehaus geöffnet ist, arbeitet hier ein androgyner menschlicher Masseur namens Jabaz. Möchtest du dich von ihm massieren lassen?",
+    "musicID": "placeholder", 
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Nicht massieren lassen",
+            "targetID": "forum",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Sich massieren lassen",
+            "targetID": "massageTalk",
+            "loot": {
+                "Name": "Teakwondo Entspannung(+5)",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+        
+        
+    ]
+}
