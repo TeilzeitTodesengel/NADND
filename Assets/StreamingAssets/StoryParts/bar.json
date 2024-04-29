@@ -1,0 +1,25 @@
+{
+    "roomID": "bar",
+    "roomName": "Bar",
+    "description": "Nach den vorherigen Geschehen bist du durstig und entscheidest dich einen Krug Bier zu trinken. Nachdem du dich auf einen der frei herumstehenden Barhocker gesetzt hast, gibst du dem Barkeeper ein Handzeichen, woraufhin er sich vorstellt und dir im selben Zuge ein Bier reicht. Alan Alyth und du kommen gut ins Gespräch, wodurch du ein bisschen etwas über die derzeitigen Tavernenbesucher erfährst.",
+    "musicID": "placeholder", 
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Mit der Banditin Tarina reden: Bierkrug (+1)",
+            "targetID": "tarina1drunk",
+            "loot": {
+                "Name": "Bierkrug",
+                "Description": "Ein Bierkrug mit dem feinsten Gesöff",
+                "Damage": 0
+            }
+        }
+    ]
+}

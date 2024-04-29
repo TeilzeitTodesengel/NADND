@@ -1,0 +1,34 @@
+{
+    "roomID": "tarina1drunk",
+    "roomName": "Nettes Gespräch mit Tarina",
+    "description": "Angeschickert wankst du zu Tarina und lädst zu einem Gespräch, auf das sie gelassen eingeht. Bevor sie sich nach Baldur's Gate zurückzog, war Tarina eine Piratin, die als Rhonda Thunderbell bekannt war. Nachdem sie Kapitän Murosko Sessprin von der Uncivil Serpent monatelang treu gedient hatte, stahl sie ihren Piratenkollegen die Beute und floh. Der größte Teil der Beute wurde in den letzten Jahren ausgegeben, aber Tarina hat genug zur Seite gelegt, um nie hungern zu müssen. Außerdem scheint sie in gutem Verhältnis zu Nine-Fingers, dem Gildenmeister der örtlichen Diebesgilde, der ihr gelegentlich Arbeit gibt, zu stehen. Tarina erzählt dir, dass sie das Gerücht gehört hat, dass ihre ehemaligen Schiffskameraden sie nach Baldur's Gate verfolgt haben. Sie erklärt sich bereit, dir zu helfen, wenn du in der Taverne Elfsong bleibst, um zu sehen, ob ihre 'Freunde' auftauchen und du sie daraufhin beseitigst.",
+    "musicID": "placeholder", 
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Auf ihre Freunde warten",
+            "targetID": "jonnyDepp",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Warten und noch zwei Bier mit Tarina trinken",
+            "targetID": "jonnyDepp",
+            "loot": {
+                "Name": "Bierkrug (+2)",
+                "Description": "Also mach mal halblang",
+                "Damage": 0
+            }
+        }
+    ]
+}

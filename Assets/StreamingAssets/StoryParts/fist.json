@@ -1,0 +1,26 @@
+{
+    "roomID": "fist",
+    "roomName": "fist",
+    "description": "Die Flammende Faust ist eine Söldnerarmee, bezahlt von den Patriarchen, um ihre Interessen in Baldur's Gate und damit auch in der Stadt selbst zu schützen.Baldur's Gate wird seit langem von Anhängern der Toten Drei heimgesagt. Diese Verfechter von Angst und Tod nutzen die derzeitige Krise, um in der ganzen Stadt Morde zu begehen. Ein paar Blocks vom Basiliskentor entfernt befindet sich die Taverne Elfsong. Dort hält soch eine Spionin namens Tarina auf und sammelt Gerüchte über die Gilde. Fragt sie, was sie über die Toten Drei weiß und, um Baldurans Willen, sei nett. Tarina hat gefährliche Freunde. ",
+    "musicID": "placeholder", 
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Du folgst deinem Auftrag von Captain Zodge und gehst in Richtung Taverne.",
+            "targetID": "tavern",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+        
+    ]
+}
