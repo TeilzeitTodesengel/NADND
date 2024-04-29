@@ -1,0 +1,36 @@
+{
+    "roomID": "forum",
+    "roomName": "forum",
+    "description": "Du betrittst das Badehaus. Die Inneneinrichtung sieht genau so prunkvoll aus, wie sein äußeres Erscheinen. Natürliches Licht strömt durch Buntglasfenster und erzeugt bunte Muster auf den Fliesen aus poliertem blauem Marmor, die den Boden bedecken. Drei flache, versenkte Becken enthalten schillerndes, nach Parfüm duftendes Wasser. Nun stehst du im Forum des Hauses.",
+    "musicID": "placeholder", 
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Den rechten Massageraum betreten",
+            "targetID": "teakwondo",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Baden gehen",
+            "targetID": "bath",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+        
+        
+    ]
+}
