@@ -1,0 +1,26 @@
+{
+    "roomID": "bathouseWrong",
+    "roomName": "bathouseWrong",
+    "description": "Beim Betreten des Badehauses bemerkst du schnell, dass das Innere genauso heruntergekommen ist wie die Fassade. Von innen tropft Regenwasser in das Badehaus und die Wände sind beschädigtund teils durchbrochen. Das Badehaus scheint still und verlassen zu sein.",
+    "musicID": "placeholder", 
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Du stellst fest, dasss das Badehaus nicht mit der Beschreibung übereinstimmt und beschließt weiterzusuchen.",
+            "targetID": "underCity",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+        
+    ]
+}
