@@ -14,7 +14,7 @@
     "abzweigungen": [
         {
             "description": "Mit Tarina reden",
-            "targetID": "tarina",
+            "targetID": "tarina1",
             "loot": {
                 "Name": "",
                 "Description": "",

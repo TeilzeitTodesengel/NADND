@@ -41,6 +41,7 @@ public class StoryManager : MonoBehaviour
             string fileContent = System.IO.File.ReadAllText(filePath);
             StoryPart part = JsonUtility.FromJson<StoryPart>(fileContent);
             StoryParts.Add(part.roomID, part);
+            Debug.Log(part.roomID);
         }
         /* Das gesammmte Laden von Audiodatein wird über Subroutinen gehandhabt. Diese lädt
          über das UnityWebRequests Modul die Datein über eine Anfrage an das lokale Datei-
