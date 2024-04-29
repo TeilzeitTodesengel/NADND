@@ -1,0 +1,35 @@
+{
+    "roomID": "kungfu",
+    "roomName": "kungfu",
+    "description": "In diesem Raum steht ein Massagetisch, der mit sauberen Handtüchern bedeckt ist. Natürliches Licht fällt durch ein in die Südwand eingelassenes Buntglasfenster ein. Du triffst auf eine weibliche menschliche Masseurin namens Qurmilah. Möchtest du dich von ihr massieren lassen?",
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Nicht massieren lassen",
+            "targetID": "forum",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Sich massieren lassen",
+            "targetID": "massageTalk",
+            "loot": {
+                "Name": "Kung Fu Entspannung(+5)",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+        
+        
+    ]
+}
