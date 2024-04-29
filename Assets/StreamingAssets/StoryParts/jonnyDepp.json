@@ -1,0 +1,25 @@
+{
+    "roomID": "jonnyDepp",
+    "roomName": "Die Piratencrew",
+    "description": "Acht bunt zusammengewürfelte Menschen schlendern in die Taverne. Der Anführer ist ein bulliger Mann mit einem trüben rechten Auge, einem grausamen Grinsen und der Prahlerei eines Piraten. Die anderen sind ein unappetitlicher, rüpelhafter Haufen, der so tut, als gehöre ihnen der Laden.Der Anführer stellt sich vor als Dead-Eye, der ehemalige erste Matrose der 'Uncivil Serpent'. „Wir suchen nach einer alten Freundin von uns“, sagt der Mann mit den toten Augen. Er schnuppert in der Luft. „Sie hört auf den Namen ‚Tarina‘, so hat man mir gesagt. Sie betrügt gerne bei Baldur's Bones.“ Ein etwas älterer, und sichtlich angetrunkener, Herr ruft von der Bar 'Das ist die da vorne! Die hat mich vorhin beim Spiel geschlagen und hängt seitdem mit diesem Möchtegern rum'. Stapfend kommt Kapitän Dead-Eye auf dich zu und fordert dich auf umgehend den Platz zu räumen. Aber du hältst deinen Platz um Tarina zu schützen. So kommt es also zum Kampf...",
+    "musicID": "placeholder", 
+    "isFight": true,
+    "fight": {
+        "Monster": {
+            "Name": "Piratencrew",
+            "Staerke": 2,
+            "Wiederstandskraft": 8
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Du hast es tasächlich geschafft",
+            "targetID": "tarina2",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+    ]
+}
