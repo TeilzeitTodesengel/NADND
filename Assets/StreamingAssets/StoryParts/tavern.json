@@ -1,43 +1,43 @@
 {
-    "roomID": "tavern",
-    "roomName": "Elfenlied-Taverne",
-    "description": "Von Zeit zu Zeit erfüllt die körperlose Stimme einer weiblichen Elfe die Taverne mit einem melancholischen Lied, das dem Etablissement seinen Namen gibt. Die Ballade ist nicht laut genug, um das Gespräch zu stören, aber die meisten Gäste hören auf zu sprechen, wenn der Elfengesang beginnt, und setzen ihn erst fort, wenn er zu Ende ist. Viele Gäste besuchen die Taverne in der Hoffnung, sie zu hören. Diejenigen, die Elbisch sprechen, können den Text verstehen, in dem ein namenloser Liebhaber betrauert wird, der auf See verloren gegangen ist. Niemand ist sich sicher, wie es dazu kam, dass der Geist in der Taverne spukt und niemand kann vorhersagen, wann er wieder singen wird.",
-    "musicID": "placeholder", 
-    "isFight": false,
-    "fight": {
-        "Monster": {
-            "Name": "Damagetester",
-            "Staerke": 1,
-            "Wiederstandskraft": 10
-        }
-    },
-    "abzweigungen": [
-        {
-            "description": "Baldurs Bones spielen",
-            "targetID": "gamble",
-            "loot": {
-                "Name": "",
-                "Description": "",
-                "Damage": 0
-            }
-        },
-        {
-            "description": "An die Bar gehen und einen trinken",
-            "targetID": "bar",
-            "loot": {
-                "Name": "",
-                "Description": "",
-                "Damage": 0
-            }
-        },
-        {
-            "description": "Den Klängen des Elfenliedes lauschen",
-            "targetID": "elfsong",
-            "loot": {
-                "Name": "",
-                "Description": "",
-                "Damage": 0
-            }
-        }
-    ]
+	"roomID": "tavern",
+	"roomName": "Elfenliedtaverne",
+	"description": "Von Zeit zu Zeit erfüllt die körperlose Stimme einer weiblichen Elfe die Taverne mit einem melancholischen Lied, das dem Etablissement seinen Namen gibt. Die Ballade ist nicht laut genug, um das Gespräch zu stören, aber die meisten Gäste hören auf zu sprechen, wenn der Elfengesang beginnt, und setzen ihn erst fort, wenn er zu Ende ist. Viele Gäste besuchen die Taverne in der Hoffnung, sie zu hören. Diejenigen, die Elfisch sprechen, können den Text verstehen, in dem ein namenloser Liebhaber betrauert wird, der auf See verloren gegangen ist. Niemand ist sich sicher, wie es dazu kam, dass der Geist in der Taverne spukt und niemand kann vorhersagen, wann er wieder singen wird.",
+	"musicID": "placeholder",
+	"isFight": false,
+	"fight": {
+		"Monster": {
+			"Name": "Damagetester",
+			"Staerke": 1,
+			"Wiederstandskraft": 10
+		}
+	},
+	"abzweigungen": [
+		{
+			"description": "Baldurs Bones spielen",
+			"targetID": "gamble",
+			"loot": {
+				"Name": "",
+				"Description": "",
+				"Damage": 0
+			}
+		},
+		{
+			"description": "An die Bar gehen und einen trinken",
+			"targetID": "bar",
+			"loot": {
+				"Name": "",
+				"Description": "",
+				"Damage": 0
+			}
+		},
+		{
+			"description": "Den Klängen des Elfenliedes lauschen",
+			"targetID": "elfsong",
+			"loot": {
+				"Name": "",
+				"Description": "",
+				"Damage": 0
+			}
+		}
+	]
 }
