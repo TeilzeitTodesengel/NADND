@@ -1,0 +1,43 @@
+{
+    "roomID": "highCity",
+    "roomName": "Oberstadt",
+    "description": "Durch die engen Gassen und dunklen Ecken bahntst du dir deinen Weg, bis du endlich die Treppen zur Oberstadt erreichte. Hier, hoch über den Dächern der Stadt, liegt eine ganz andere Welt – eine Welt voller Intrigen, Machtspiele und verlockender Abenteuer. Mit einem Gefühl der Vorfreude und Entschlossenheit tritst du in die prächtigen Straßen der Oberstadt ein, bereit für alles, was das Schicksal dir weiterhin bringen mochte. Nachdem du nun eine Weile durch die Straßenmärkte, breite Pflastersteinstraßen entlang einer Schmiede und über Plätze mit prächtigen Brunnen und prahlenden Abenteurern gestriffen bist, kommst du zum Schluss, dass das Badehaus wohl woanders liegen muss. Dann auf ein Neues!",
+    "musicID": "placeholder", 
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Im Hafenbezirk suchen",
+            "targetID": "port",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "Zum Schmied gehen",
+            "targetID": "smith",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        },
+        {
+            "description": "In der Unterstadt suchen",
+            "targetID": "underCity",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+    ]
+}
