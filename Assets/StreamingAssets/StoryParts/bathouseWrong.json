@@ -13,7 +13,7 @@
     },
     "abzweigungen": [
         {
-            "description": "Du stellst fest, dasss das Badehaus nicht mit der Beschreibung übereinstimmt und beschließt weiterzusuchen.",
+            "description": "Weitersuchen",
             "targetID": "underCity",
             "loot": {
                 "Name": "",
