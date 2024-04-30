@@ -1,0 +1,26 @@
+{
+    "roomID": "statue",
+    "roomName": "Imp Staue",
+    "description": "Etwas falsch am Platz wirkt hier allerdings die Statue eines Imps. Sie scheint noch relativ neu und wirkt nur all zu lebendig. Gut versteckt, allerdings nicht gut genug, findest Du einen Durchgang...",
+    "musicID": "placeholder", 
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Den Durchgang untersuchen",
+            "targetID": "secret",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+        
+    ]
+}

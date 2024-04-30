@@ -1,0 +1,26 @@
+{
+    "roomID": "plants",
+    "roomName": "Beete",
+    "description": "Im Innenhof des Badehauses sind ein paar Beete. Trotz der bedrückenden Laune durch die Vorkomnisse in Elturel blühen die Blumen als könnten sie von nichts getrübt werden. Mit diesem schönen Gedanken suchst du weiter.",
+    "musicID": "placeholder", 
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Woanders suchen",
+            "targetID": "garden",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+        
+    ]
+}

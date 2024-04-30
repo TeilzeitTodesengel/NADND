@@ -1,0 +1,26 @@
+{
+    "roomID": "impFight",
+    "roomName": "Imp Kampf",
+    "description": "Nach dem finalen Treffer löst sich der Imp langsam in Luft auf und du verweilst allein mit deinen Wunden. Nach einer kurzen Pause steigst du weiter herab...",
+    "musicID": "placeholder", 
+    "isFight": true,
+    "fight": {
+        "Monster": {
+            "Name": "Torwächterteufel",
+            "Staerke": 2,
+            "Wiederstandskraft": 22
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Ins Schwarze gehen",
+            "targetID": "ende",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+        
+    ]
+}
