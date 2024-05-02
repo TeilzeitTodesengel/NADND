@@ -1,6 +1,6 @@
 # NADND
 ## Der Titel
-Um die Frage zu klären, der Titel steht für **N**ot **A**nother **D**ungeons and **D**ragons **A**dventure, wobei das _Adventure_ am Ende nicht im Titel auftauch.
+Um die Frage zu klären, der Titel steht für **N**ot **A**nother **D**ungeons a**n**d **D**ragons Adventure, wobei das _Adventure_ am Ende nicht im Titel auftauch.
 
 ## Hintergrund
 Dieses Projekt ist im Rahmen einer Fachpraxisarbeit an meiner Schule entstanden. Es ist ein Textadventure, was starke Inspirationen aus den "Live your own Adventure"-Büchern zieht. Hier ist _ganz ganz viel_ Verzweiflung reingeflossen. Warum ist Unity einfach manchmal echt weird. Immerhin haben wir alle was gelernt und hatten vielleicht auch ein bisschen Spaß daran...
