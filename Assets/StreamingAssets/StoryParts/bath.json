@@ -1,0 +1,25 @@
+{
+    "roomID": "bath",
+    "roomName": "Badezimmer",
+    "description": "Die Wände dieses zwei Meter hohen Säulenraums sind mit Fresken von badenden Königen geschmückt. Natürliches Licht strömt durch Buntglasfenster und erzeugt bunte Muster auf den Fliesen aus poliertem blauem Marmor, die den Boden bedecken. Drei flache, versenkte Becken enthalten schillerndes, nach Parfüm duftendes Wasser. Weiße Marmorbänke mit Stapeln trockener Handtücher stehen neben den Becken, die jeweils mit einem Paar Messinghähnen ausgestattet sind. Die Wasserhähne beziehen warmes und kaltes Wasser aus Rohren, die unter dem Boden verlaufen. Ein fest sitzender Steinstopfen am Boden jedes Beckens verhindert, dass das Wasser abläuft. Zahlreiche winzige Abflusslöcher in der Nähe der Oberseiten der versenkten Becken verhindern, dass sie überlaufen.",
+    "musicID": "placeholder", 
+    "isFight": false,
+    "fight": {
+        "Monster": {
+            "Name": "Damagetester",
+            "Staerke": 1,
+            "Wiederstandskraft": 10
+        }
+    },
+    "abzweigungen": [
+        {
+            "description": "Sich mit den anderen Gästen unterhalten",
+            "targetID": "bathTalk",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }
+    ]
+}

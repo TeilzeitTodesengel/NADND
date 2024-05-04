@@ -1,0 +1,43 @@
+{
+  "roomID": "port",
+  "roomName": "Hafenbezirk",
+  "description": "Nach einer längeren Suche, als du erhofft hattest, stehst du nun endlich dem Eingang des Badehauses gegenüber.",
+  "musicID": "placeholder",
+  "isFight": false,
+  "fight": {
+    "Monster": {
+      "Name": "Damagetester",
+      "Staerke": 1,
+      "Wiederstandskraft": 10
+    }
+  },
+  "abzweigungen": [
+    {
+      "description": "In die Unterstadt zurückkehren",
+      "targetID": "underCity",
+      "loot": {
+        "Name": "",
+        "Description": "",
+        "Damage": 0
+      }
+    },
+    {
+      "description": "In die Oberstadt zurückkehren",
+      "targetID": "highCity",
+      "loot": {
+        "Name": "",
+        "Description": "",
+        "Damage": 0
+      }
+    },
+    {
+      "description": "Das Badehaus genauer untersuchen",
+      "targetID": "bathouseRight",
+      "loot": {
+        "Name": "",
+        "Description": "",
+        "Damage": 0
+      }
+    }
+  ]
+}

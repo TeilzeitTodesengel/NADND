@@ -1,0 +1,43 @@
+{
+  "roomID": "garden",
+  "roomName": "Innenhof",
+  "description": "Dieser L-förmige Innenhof ist mit einem gepflegten Rasen und schön gepflegten Sträuchern ausgestattet. Der Hof ist mit weißen Marmorbänken und Steinbrunnen geschmückt, die jeweils die Form einer lächelnden Nymphe haben, die einen Krug kippt, der Wasser in ein rundes Steinbecken schüttet.",
+  "musicID": "placeholder",
+  "isFight": false,
+  "fight": {
+    "Monster": {
+      "Name": "Damagetester",
+      "Staerke": 1,
+      "Wiederstandskraft": 10
+    }
+  },
+  "abzweigungen": [
+    {
+      "description": "Springbrunnen untersuchen",
+      "targetID": "fountain",
+      "loot": {
+        "Name": "",
+        "Description": "",
+        "Damage": 0
+      }
+    },
+    {
+      "description": "Beete untersuchen",
+      "targetID": "plants",
+      "loot": {
+        "Name": "",
+        "Description": "",
+        "Damage": 0
+      }
+    },
+    {
+      "description": "Statuen untersuchen",
+      "targetID": "statue",
+      "loot": {
+        "Name": "",
+        "Description": "",
+        "Damage": 0
+      }
+    }
+  ]
+}
