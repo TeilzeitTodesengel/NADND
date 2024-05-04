@@ -192,6 +192,7 @@ public class StageManager : MonoBehaviour
         SwitchCombatUI(false);
         UpdateHealth();
         StartCoroutine(LoadMonsterImage(monsterName));
+        DisplayItemOnCombatScreen();
     }
 
     // Updatet den Lebenstext im Kampf
@@ -251,8 +252,16 @@ public class StageManager : MonoBehaviour
     private void DisplayEquippedItem()
     {
         itemName.text = GetComponent<RunManager>().equippedItem.Name;
-        //combatWeaponName.text = GetComponent<RunManager>().equippedItem.Name;
+        if (combat.gameObject.activeSelf)
+        {
+            DisplayItemOnCombatScreen();
+        }
         itemDescription.text = "Description: " + GetComponent<RunManager>().equippedItem.Description;
         itemDamage.text = "Schaden: " + GetComponent<RunManager>().equippedItem.Damage;
+    }
+
+    private void DisplayItemOnCombatScreen()
+    {
+        combatWeaponName.text = GetComponent<RunManager>().equippedItem.Name;
     }
 }

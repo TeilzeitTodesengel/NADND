@@ -1193,6 +1193,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 839407376}
     - target: {fileID: 6088433061829193159, guid: c2c6650abbdb9a64c8b03e77ecbf2581, type: 3}
+      propertyPath: combatWeaponName
+      value: 
+      objectReference: {fileID: 172355625}
+    - target: {fileID: 6088433061829193159, guid: c2c6650abbdb9a64c8b03e77ecbf2581, type: 3}
       propertyPath: equippedItemText
       value: 
       objectReference: {fileID: 172355625}
@@ -4654,7 +4658,7 @@ GameObject:
   - component: {fileID: 1575045694}
   m_Layer: 5
   m_Name: Combat
-  m_TagString: Untagged
+  m_TagString: combat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
