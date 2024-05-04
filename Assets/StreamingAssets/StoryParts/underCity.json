@@ -30,7 +30,16 @@
                 "Description": "",
                 "Damage": 0
             }
-        }
-        
+        },
+
+        {
+            "description": "Du beschließt in der Oberstadt zu suchen",
+            "targetID": "highCity",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
+        }        
     ]
 }

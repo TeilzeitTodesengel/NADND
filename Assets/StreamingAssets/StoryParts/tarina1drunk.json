@@ -27,7 +27,7 @@
             "loot": {
                 "Name": "Bierkrug (+2)",
                 "Description": "Also mach mal halblang",
-                "Damage": 0
+                "Damage": 2
             }
         }
     ]

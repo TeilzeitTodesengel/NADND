@@ -18,7 +18,7 @@
             "loot": {
                 "Name": "Bierkrug",
                 "Description": "Ein Bierkrug mit dem feinsten Gesöff",
-                "Damage": 0
+                "Damage": 1
             }
         }
     ]

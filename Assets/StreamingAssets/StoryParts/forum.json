@@ -38,8 +38,16 @@
                 "Description": "",
                 "Damage": 0
             }
+        },
+        {
+            "description": "In den Garten gehen",
+            "targetID": "garden",
+            "loot": {
+                "Name": "",
+                "Description": "",
+                "Damage": 0
+            }
         }
-        
-        
+
     ]
 }

@@ -14,7 +14,7 @@
     "abzweigungen": [
         {
             "description": "Du wartest und schaust dich ein wenig in der Taverne um.",
-            "targetID": "warten",
+            "targetID": "jonnyDepp",
             "loot": {
                 "Name": "",
                 "Description": "",
@@ -24,11 +24,11 @@
         
         {
             "description": "Du wartest und bestellst dir einen Bierkrug.",
-            "targetID": "ende",
+            "targetID": "jonnyDepp",
             "loot": {
                 "Name": "Bierkrug(+1)",
                 "Description": "Das beste Bier, das ich seit langem getrunken habe.",
-                "Damage": 0
+                "Damage": 1
             }
         }
         
