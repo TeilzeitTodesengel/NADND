@@ -26,7 +26,8 @@ public class StoryManager : MonoBehaviour
     public AudioClip startSound;
 
     private AudioClip[] crossfadeClip = {null, null};
-    private bool source2Playing = false; 
+    private bool source2Playing = false;
+    private AudioClip currentClip;
     
     // Hier wird der Story Manager Initialisiert 
     private void Awake()
@@ -103,6 +104,7 @@ public class StoryManager : MonoBehaviour
         {
             GetComponent<AudioSource>().Stop();
             GetComponent<AudioSource>().clip = startSound;
+            currentClip = startSound;
             crossfadeClip[0] = startSound;
             crossfadeClip[1] = null;
             GetComponent<AudioSource>().Play();
@@ -112,11 +114,15 @@ public class StoryManager : MonoBehaviour
         {
             try
             {
-                // GetComponent<AudioSource>().Stop();
-                // GetComponent<AudioSource>().clip = audioClips[partToLoad.musicID];
-                crossfadeClip[1] = audioClips[partToLoad.musicID];
-                // GetComponent<AudioSource>().Play();
-                StartCoroutine(Crossfade());
+                if (currentClip != audioClips[partToLoad.musicID])
+                {
+                    currentClip = audioClips[partToLoad.musicID];
+                    // GetComponent<AudioSource>().Stop();
+                    // GetComponent<AudioSource>().clip = audioClips[partToLoad.musicID];
+                    crossfadeClip[1] = audioClips[partToLoad.musicID];
+                    // GetComponent<AudioSource>().Play();
+                    StartCoroutine(Crossfade());
+                }
             }
             catch (KeyNotFoundException  e)
             {

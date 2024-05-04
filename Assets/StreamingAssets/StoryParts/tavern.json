@@ -2,7 +2,7 @@
 	"roomID": "tavern",
 	"roomName": "Elfenliedtaverne",
 	"description": "Von Zeit zu Zeit erfüllt die körperlose Stimme einer weiblichen Elfe die Taverne mit einem melancholischen Lied, das dem Etablissement seinen Namen gibt. Die Ballade ist nicht laut genug, um das Gespräch zu stören, aber die meisten Gäste hören auf zu sprechen, wenn der Elfengesang beginnt, und setzen ihn erst fort, wenn er zu Ende ist. Viele Gäste besuchen die Taverne in der Hoffnung, sie zu hören. Diejenigen, die Elfisch sprechen, können den Text verstehen, in dem ein namenloser Liebhaber betrauert wird, der auf See verloren gegangen ist. Niemand ist sich sicher, wie es dazu kam, dass der Geist in der Taverne spukt und niemand kann vorhersagen, wann er wieder singen wird.",
-	"musicID": "placeholder",
+	"musicID": "atmo1",
 	"isFight": false,
 	"fight": {
 		"Monster": {
