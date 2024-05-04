@@ -19,7 +19,15 @@ public class StoryManager : MonoBehaviour
     public GameObject mainObject;
     public Dictionary<String, AudioClip> audioClips =  new Dictionary<String, AudioClip>();
 
+    public AudioSource source1;
+    public AudioSource source2;
+    public double crossfadeTargetVolume = 0.2;
+
     public AudioClip startSound;
+
+    private AudioClip[] crossfadeClip = {null, null};
+    private bool source2Playing = false; 
+    
     // Hier wird der Story Manager Initialisiert 
     private void Awake()
     {
@@ -91,10 +99,12 @@ public class StoryManager : MonoBehaviour
         }
         
         // Es wird geprft ob es der erste Raum ist. So wird immer der Startmusikclip gespielt
-        if (partToLoad.roomName == "start")
+        if (partToLoad.roomID == "start")
         {
             GetComponent<AudioSource>().Stop();
             GetComponent<AudioSource>().clip = startSound;
+            crossfadeClip[0] = startSound;
+            crossfadeClip[1] = null;
             GetComponent<AudioSource>().Play();
         }
         else
@@ -102,9 +112,11 @@ public class StoryManager : MonoBehaviour
         {
             try
             {
-                GetComponent<AudioSource>().Stop();
-                GetComponent<AudioSource>().clip = audioClips[partToLoad.musicID];
-                GetComponent<AudioSource>().Play();
+                // GetComponent<AudioSource>().Stop();
+                // GetComponent<AudioSource>().clip = audioClips[partToLoad.musicID];
+                crossfadeClip[1] = audioClips[partToLoad.musicID];
+                // GetComponent<AudioSource>().Play();
+                StartCoroutine(Crossfade());
             }
             catch (KeyNotFoundException  e)
             {
@@ -173,5 +185,44 @@ public class StoryManager : MonoBehaviour
         AudioClip clip = DownloadHandlerAudioClip.GetContent(url);
         // Der Clip wird dem audioClips Dictionary hinzugefügt
         audioClips.Add(fileName, clip);
+    }
+
+    private IEnumerator Crossfade()
+    {
+        if (!source2Playing)
+        {
+            source2.clip = crossfadeClip[1];
+            source2.volume = 0;
+            source2.Play();
+            float iCount = 0F;
+            while (iCount < 0.2F)
+            {
+                yield return new WaitForSeconds(0.2F);
+                source1.volume -= 0.02F;
+                source2.volume += 0.02F;
+                iCount += 0.02F;
+            }
+            source1.Stop();
+            source2Playing = true;
+        }
+        else
+        {
+            source1.clip = crossfadeClip[1];
+            source1.volume = 0;
+            source1.Play();
+            float iCount = 0F;
+            while (iCount < 0.2F)
+            {
+                yield return new WaitForSeconds(0.2F);
+                source2.volume -= 0.02F;
+                source1.volume += 0.02F;
+                iCount += 0.02F;
+            }
+            source2.Stop();
+            source2Playing = false;
+        }
+
+        crossfadeClip[0] = crossfadeClip[1];
+        crossfadeClip[1] = null;
     }
 }
