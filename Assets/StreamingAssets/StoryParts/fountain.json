@@ -2,7 +2,7 @@
     "roomID": "fountain",
     "roomName": "Springbrunnen",
     "description": "Im Innenhof des Badehauses steht ein Springbrunnen. Eigentlich ist er ganz normal. Hier gibs nichts interessantes anzuschauen. Du erfrischt dich noch einmal kurz und gehst dann dich weiter umschauen.",
-    "musicID": "placeholder", 
+    "musicID": "bathhouse", 
     "isFight": false,
     "fight": {
         "Monster": {

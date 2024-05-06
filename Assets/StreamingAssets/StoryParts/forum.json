@@ -2,7 +2,7 @@
     "roomID": "forum",
     "roomName": "forum",
     "description": "Du betrittst das Badehaus. Die Inneneinrichtung sieht genau so prunkvoll aus, wie sein äußeres Erscheinen. Natürliches Licht strömt durch Buntglasfenster und erzeugt bunte Muster auf den Fliesen aus poliertem blauem Marmor, die den Boden bedecken. Drei flache, versenkte Becken enthalten schillerndes, nach Parfüm duftendes Wasser. Nun stehst du im Forum des Hauses.",
-    "musicID": "placeholder", 
+    "musicID": "bathhouse", 
     "isFight": false,
     "fight": {
         "Monster": {

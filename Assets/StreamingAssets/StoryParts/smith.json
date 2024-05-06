@@ -2,7 +2,7 @@
     "roomID": "smith",
     "roomName": "Die Drachenstahl-Schmiede",
     "description": "Du öffnest die Tür zum Schmiedehaus und dir kommt eine Stechende Hitze entgegen. Die Drachenstahl-Schmiede macht ihrem Namen wohl alle Ehre. Zwischen den, an der Wand angelehnten Lanzen und Schilden, den Von den Regalen hängenden Morgensternen und den Halterungen voller Säbeln und Schwertern steht ein kleiner gebückter Herr mit einer Brille auf der Nase, die seine Augen so groß wie Wyvern-Eiern aussehen lassen. Nachdem er dich bemerkt hat, dreht er sich zu einem Regal um und greift nach einem Schwert. Es ist aus bläulichem Silber gefertigt, sein Griff mit einem Saphir und einem Dunkelen Lederband verziert. 'Die Idee für dieses Schwert kam mir in einem Traum. Seitdem warte ich auf eine Person, die mir würdig erscheint es zu tragen. Du scheinst mir wie jemand auszusehen, der noch großes leisten wird, also was sagst du?' ",
-    "musicID": "placeholder", 
+    "musicID": "smith", 
     "isFight": false,
     "fight": {
         "Monster": {

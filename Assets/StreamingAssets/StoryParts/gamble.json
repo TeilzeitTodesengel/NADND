@@ -2,7 +2,7 @@
     "roomID": "gamble",
     "roomName": "Baldurs Bones",
     "description": "Baldurs Knochen. Eignetlichein ganz simples Glückspiel. Aber trozt deines beachtenswerten Talentes zum betrügen ist wer anders hier am Tisch besser. Vielleicht ist es die Frau dir gegenüber, die irgendwie den Eindruck einer Piratin auf dich mach. Hatte der Captain nicht sowas in die Richtung gesagt? Jetzt fällt es dir wieder ein. Das ist die Tarina, die du suchen sollst. Damit hast du dann auch die Person gefunden, die du suchen solltest. Sie soll die Informationen über die Kultisten haben, welche du jagdst...",
-    "musicID": "placeholder", 
+    "musicID": "tavern1", 
     "isFight": false,
     "fight": {
         "Monster": {

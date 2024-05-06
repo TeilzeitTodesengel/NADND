@@ -2,7 +2,7 @@
     "roomID": "tarina2",
     "roomName": "tarina2",
     "description": "Sobald ihre Piratenfreunde erledigt sind, teilt Tarina dir folgendes mit. Einige Blocks nordwestlich von hier befindet sich ein öffentliches Badehaus mit einem ummauerten Garten und herumtollenden Nymphen, die in das Eingangstor eingemeißelt sind. Anhänger der Drei Toten wurden gesehen, wie sie aus dem Badehaus kamen und gingen, und mir wurde gesagt, dass es im Inneren eine Geheimtür gibt, die in ein Verlies führt und dort verstecken sich die Mörder. Wohin gehst du?",
-    "musicID": "placeholder", 
+    "musicID": "tavern2", 
     "isFight": false,
     "fight": {
         "Monster": {

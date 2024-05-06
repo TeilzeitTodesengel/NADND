@@ -2,7 +2,7 @@
     "roomID": "bar",
     "roomName": "Bar",
     "description": "Nach den vorherigen Geschehen bist du durstig und entscheidest dich einen Krug Bier zu trinken. Nachdem du dich auf einen der frei herumstehenden Barhocker gesetzt hast, gibst du dem Barkeeper ein Handzeichen, woraufhin er sich vorstellt und dir im selben Zuge ein Bier reicht. Alan Alyth und du kommen gut ins Gespräch, wodurch du ein bisschen etwas über die derzeitigen Tavernenbesucher erfährst.",
-    "musicID": "placeholder", 
+    "musicID": "tavern1", 
     "isFight": false,
     "fight": {
         "Monster": {

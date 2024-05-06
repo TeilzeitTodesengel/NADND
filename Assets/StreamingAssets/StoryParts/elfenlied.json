@@ -2,7 +2,7 @@
     "roomID": "elfsong",
     "roomName": "Das Elfenlied",
     "description": "Wie in den Erzählungen die du gehört hast. Wie aus dem nichts ertönt ein Lied über den fall von Elturel, der Nachbarstadt von Baldurs Gate. Gesungen von einer bezaubernden Elfenstimme, ertönt es von überall, so als würde es das Gebäude selbst singen. Wie immer ist die Kundschaft der Taverne still um dem Lied zu lauschen. Allerdings scheinen einige Besucher beunruhig. Als du den Wirt Alan darauf ansprichst sagt er dir, dass das Lied anders war, wie sonst.",
-    "musicID": "placeholder", 
+    "musicID": "elfsong", 
     "isFight": false,
     "fight": {
         "Monster": {

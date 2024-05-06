@@ -2,6 +2,7 @@
     "roomID": "massageTalk",
     "roomName": "massageTalk",
     "description": "Jabaz (ein weiterer Masseur) weiß, dass das Badehaus der Herzogin Thalamra Vanthampur gehört und von ihrem brutalen Sohn Mortlock geleitet wird. Mortlock hat Jabaz strikte Anweisungen gegeben, sich nach Feierabend nicht im Badehaus aufzuhalten. Jabaz hat den Verdacht, dass Mortlock nebenbei irgendwelche zwielichtigen Geschäfte betreibt und das Badehaus als Fassade benutzt, um seine dunklen Machenschaften ohne das Wissen des Herzogs zu verbergen.",
+    "musicID": "bathhouse",
     "isFight": false,
     "fight": {
         "Monster": {

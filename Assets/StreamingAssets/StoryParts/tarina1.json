@@ -2,7 +2,7 @@
     "roomID": "tarina1",
     "roomName": "tarina1",
     "description": "Bevor Tarina nach Baldur’s Gate zurückkehrte war sie eine Piratin, die als Honda Thunderbell bekannt war. Nachdem sie Kapitän Murosko Sessprin von der Uncivil Serpent monatelang treu gedient hatte, stahl sie ihren Piratenkollegen die Beute und floh. Der größte Teil der Beute wurde in den letzten Jahren ausgegeben, aber Tarina hat genug auf die Seite gelegt, um nie zu hungern. Außerdem steht sie in gutem Verhältnis zu Nine-Fingers, dem Gildenmeister der örtlichen Diebesgilde, der ihr gelegentlich Arbeit gibt. Tarina hat kürzlich das Gerücht gehört, dass ihre ehemaligen Schiffskameraden sie nach Baldur's Gate verfolgt haben. Sie erklärt sich bereit, dir zu helfen, wenn du in der Taverne Elfsong bleibst, um zu sehen, ob die Piraten auftauchen und sie besitigen. Allerdings sagt sie dir, dass es ohne Waffe schwer werden könnte, außer du kannst ziemlich stark zuschlagen",
-    "musicID": "placeholder", 
+    "musicID": "tavern1", 
     "isFight": false,
     "fight": {
         "Monster": {

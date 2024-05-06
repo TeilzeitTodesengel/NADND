@@ -2,7 +2,7 @@
     "roomID": "impFight",
     "roomName": "Imp Kampf",
     "description": "Nach dem finalen Treffer löst sich der Imp langsam in Luft auf und du verweilst allein mit deinen Wunden. Nach einer kurzen Pause steigst du weiter herab...",
-    "musicID": "placeholder", 
+    "musicID": "tunnel", 
     "isFight": true,
     "fight": {
         "Monster": {
