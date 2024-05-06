@@ -133,6 +133,10 @@ public class RunManager : MonoBehaviour
         GetComponent<StageManager>()
             .UpdateCombatLog("Das Monster trifft dich für " + currentMonster.Staerke + " Schaden.");
         GetComponent<StageManager>().UpdateHealth();
+        if (health <= 0)
+        {
+            Die();
+        }
     }
 
     // Gibt das aktuelle Leben zurück
@@ -173,5 +177,10 @@ public class RunManager : MonoBehaviour
         {
             equippedItem = itemToEquip;
         }
+    }
+
+    private void Die()
+    {
+        Debug.Log("You died");
     }
 }

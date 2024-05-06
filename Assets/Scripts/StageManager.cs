@@ -199,6 +199,7 @@ public class StageManager : MonoBehaviour
     public void UpdateHealth()
     {
         healthText.text = "Leben: " + GetComponent<RunManager>().GetHealth();
+        
     }
 
     // Diese Coroutine lädt das Bild des Monsters. Der Dateiname muss gleich dem Monsternamen sein. Es wird nur png unterstützt.
@@ -263,5 +264,10 @@ public class StageManager : MonoBehaviour
     private void DisplayItemOnCombatScreen()
     {
         combatWeaponName.text = GetComponent<RunManager>().equippedItem.Name;
+    }
+
+    public void DeathUI()
+    {
+        
     }
 }
