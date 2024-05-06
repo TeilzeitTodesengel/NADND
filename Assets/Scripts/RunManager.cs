@@ -181,6 +181,6 @@ public class RunManager : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("You died");
+        GetComponent<StageManager>().DeathUI();
     }
 }

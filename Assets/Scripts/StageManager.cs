@@ -14,6 +14,7 @@ public class StageManager : MonoBehaviour
     public TextMeshProUGUI mainText;
     public Canvas combat;
     public Canvas story;
+    public Canvas death;
     public TextMeshProUGUI combatLog;
     public TextMeshProUGUI equippedItemText;
     public TextMeshProUGUI monsterNameText;
@@ -28,6 +29,7 @@ public class StageManager : MonoBehaviour
     public Button heavyATK;
     public Button combatWon;
     public Button openINVButton;
+    public Button deathButton;
     public Image monsterImage;
     private int combatLogLength = 0;
 
@@ -268,6 +270,13 @@ public class StageManager : MonoBehaviour
 
     public void DeathUI()
     {
-        
+        death.gameObject.SetActive(true);
+        story.gameObject.SetActive(false);
+        combat.gameObject.SetActive(false);
+    }
+
+    public void QuitApplication()
+    {
+        Application.Quit();
     }
 }
