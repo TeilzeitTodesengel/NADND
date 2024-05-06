@@ -2,7 +2,7 @@
   "roomID": "bathouseRight",
   "roomName": "Das richtige Badehaus",
   "description": "Das Badehaus ist ein einstöckiges, verputztes Gebäude mit Buntglasfenstern und Tondachziegeln. Zehn Fuß hohe Mauern umschließen einen großen Innenhof außerhalb der südöstlichen Ecke des Gebäudes. Die geschlossenen Holztüren zum Hof sind mit Bildern von lächelnden Nymphen verziert, die im Wasser tanzen und herumtollen. Äußerlich gibt es nichts Verdächtiges an dem Badehaus, das über eines der modernsten Sanitärsysteme der Stadt verfügt. Die Türen zum Innenhof sind unverschlossen und unbewacht. Das Badehaus schließt um Mitternacht und öffnet im Morgengrauen wieder, und die Stadtbewohner gehen hier den ganzen Tag und bis in den Abend hinein ein und aus.",
-  "musicID": "placeholder",
+  "musicID": "bathhouse",
   "isFight": false,
   "fight": {
     "Monster": {

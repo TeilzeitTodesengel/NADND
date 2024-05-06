@@ -2,6 +2,7 @@
     "roomID": "kungfu",
     "roomName": "kungfu",
     "description": "In diesem Raum steht ein Massagetisch, der mit sauberen Handtüchern bedeckt ist. Natürliches Licht fällt durch ein in die Südwand eingelassenes Buntglasfenster ein. Du triffst auf eine weibliche menschliche Masseurin namens Qurmilah. Möchtest du dich von ihr massieren lassen?",
+    "musicID": "bathhouse",
     "isFight": false,
     "fight": {
         "Monster": {

@@ -2,7 +2,7 @@
     "roomID": "ende",
     "roomName": "Ende",
     "description": "Hey Spieler oder Spielerin, was auch immer du als angemessen empfindest. Hier sind die Entwickler. Wir wollten uns nur bei dir bedanken, dass du unser Spiel gespielt hast. Wir hoffen es hat dir gefallen. Die Story des namenlosen Helden ist hier schon zu Ende. Um sie nochmal zu spielen kannst du das Game einfach neu starten, allerdings kannst du sie erweitern, wenn du willst. Unter https://github.com/TeilzeitTodesengel/NADND findest du die Dateien des Spiels. Dort ist im Streaming Assets Order, ein Unterordner von Assets, der StoryParts Ordner. Da gibs eine Vorlage für eine Json Datei (Vorlage.json). Damit kannst du die Story einfach selbst erweitern. Deine eingen Parts müssen dann genau in dem Format im StoryParts Order landen. Dann einfach das Spiel neu starten und deine eigene Geschichte erleben. \n\n - Von ganzem Herzen Alina, Mika und Matthes.",
-    "musicID": "placeholder", 
+    "musicID": "ende", 
     "isFight": false,
     "fight": {
         "Monster": {

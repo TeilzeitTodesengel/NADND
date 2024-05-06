@@ -2,7 +2,7 @@
     "roomID": "teakwondo",
     "roomName": "teakwondo",
     "description": "In diesem Raum steht ein Massagetisch, der mit sauberen Handtüchern bedeckt ist. Natürliches Licht fällt durch ein in die Südwand eingelassenes Buntglasfenster ein. Während der Stunden, in denen das Badehaus geöffnet ist, arbeitet hier ein androgyner menschlicher Masseur namens Jabaz. Möchtest du dich von ihm massieren lassen?",
-    "musicID": "placeholder", 
+    "musicID": "bathhouse", 
     "isFight": false,
     "fight": {
         "Monster": {
