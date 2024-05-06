@@ -30,6 +30,7 @@ public class StageManager : MonoBehaviour
     public Button combatWon;
     public Button openINVButton;
     public Button deathButton;
+    public Button quitGameButton;
     public Image monsterImage;
     private int combatLogLength = 0;
 
@@ -85,6 +86,11 @@ public class StageManager : MonoBehaviour
         optionButtons[1].SetActive(true);
         optionButtons[2].SetActive(true);
         optionButtons[3].SetActive(true);
+
+        if(newContent.roomID == "ende")
+        {
+            quitGameButton.gameObject.SetActive(true);
+        }
         /*
          * In dem Switch wird dann anhand der Länge der Liste der Abzweigungen des anzuzeigenden Story Parts
          * die OptionButtons verändert. Dies läuft immer nach dem Gleichen Muster
